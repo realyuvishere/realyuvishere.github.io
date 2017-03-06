@@ -1,0 +1,82 @@
+.intro {
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(wallpaper%201.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 14%;
+    padding-bottom: 1%;
+    font-family: 'Product Sans', 'Open Sans', 'Roboto', sans-serif, Verdana;
+}
+.intropic {
+    height: 18%;
+    width: 18%;
+    border-radius: 100%;
+    border: 6px solid #fff;
+    cursor: pointer;
+    animation: 1s zoom ease-out, .5s zoomback ease-out 1s;
+    -webkit-animation: 1s zoom ease-out, .5s zoomback ease-out 1s;
+}
+.header {
+    padding-top: 2%;
+    animation: 1s visible ease-out;
+    -webkit-animation: 1s visible ease-out;
+}
+.introbod {
+    position: relative;
+    width: 100%;
+}
+.text {
+    white-space: nowrap; 
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.imgoverlay {
+    position: absolute;
+    bottom: 100%;
+    left: 41%;
+    right: 0;
+    background-color: rgba(97, 105, 103, 0.34);
+    overflow: hidden;
+    width: 18%;
+    height:0;
+    transition: .5s ease;
+    border-radius: 100%;
+    top: 1%;
+    cursor: pointer
+}
+.introbod:hover .imgoverlay {
+    bottom: 0;
+    height: 100%;
+}
+.wholeimg {
+    animation: 1s image ease-out;
+    -webkit-animation: 1s image ease-out;
+    transform: scale(1.2);
+    width: 24%;
+    height: auto
+}
+.imgbod {
+    margin-top: 10%;
+    border: 6px solid #fff
+}
+.fade {
+    opacity: 1
+}
+
+@keyframes image{from{border-radius: 100%;transform: scale(1)}to{border-radius: 0%; transform: scale(1.2)}}
+@-webkit-keyframes image{from{border-radius: 100%;transform: scale(1)}to{border-radius: 0%; transform: scale(1.5)}}
+@keyframes zoom{from{opacity: 0;transform: scale(0)}to{opacity: 1;transform: scale(1.1)}}
+@-webkit-keyframes zoom{from{opacity: 0;transform: scale(0)}to{opacity: 1;transform: scale(1.1)}}
+@keyframes zoomback{from{transform: scale(1.1)}to{transform: scale(1)}}
+@-webkit-keyframes zoomback{from{transform: scale(1.1)}to{transform: scale(1)}}
+@keyframes visible{from{opacity: 0}to{opacity: 1}}
+@-webkit-keyframes visible{from{opacity: 0}to{opacity: 1}}
