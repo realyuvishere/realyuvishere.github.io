@@ -1,0 +1,104 @@
+header , footer {
+    width: 100%;
+    color: #fff;
+    background-color: #79ab17;
+    font-family: Segoe UI , arial , sans-serif;
+    font-size: 40px;
+    padding: 30px;
+    position: fixed;
+    z-index: 10;
+    cursor: default
+}
+body {
+    margin: 0px;
+    line-height: 1.5
+}
+div {
+    width: auto;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 28px;
+    height: 1000px;
+    position: relative;
+    cursor: default
+}
+.menu {
+    margin-left: -100px;
+    padding: 25px;
+    cursor: pointer;
+    float: left;
+    position: fixed;
+    transition: .2s ease-out;
+    font-size: 30px;
+    z-index: 11
+}
+.menu:hover {
+    background-color: #616967;
+    color: #fff
+}
+.red:hover {
+    background-color: #ff8686 !important
+}
+.green:hover {
+    background-color: #9fd47e !important
+}
+footer {
+    font-size: 34px !important;
+    position: relative !important;
+    width: auto;
+    height: 500px;
+    background-color: #91bb3e;
+    z-index: 9
+}
+.sidenav {
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    animation-name: fromleft;
+    animation-duration: .2s;
+    -webkit-animation-name: fromleft;
+    -webkit-animation-duration: .2s;
+    z-index: 20;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.6);
+    background-color: #fff;
+    height: 100%;
+    width: 300px;
+    overflow: auto
+}
+.navitems {
+    color: #525252;
+    padding: 10px 223px 10px 16px;
+    font-family: verdana , sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s ease-out;
+    width: inherit;
+    box-sizing: border-box
+}
+.navitems:hover {
+    background-color: #ccc;
+    color: #000
+}
+.navitems:focus {
+    background-color: #50a21d !important;
+    padding-right: 200px !important;
+    color: #fff !important
+}
+.close {
+    font-size: 24px;
+    padding-right: 191px !important
+}
+.small {
+    font-size: 30px !important
+}
+.current {
+    padding-right: 200px !important;
+    background-color: #50a21d;
+    color: #fff;
+}
+.current:hover {
+    padding-right: 229px !important
+}
+
+@keyframes fromleft {from{left: -300px;opacity: 0}to{left: 0px;opacity: 1}}
+@-webkit-keyframes fromleft {from{left: -300px;opacity: 0}to{left: 0px;opacity: 1}}

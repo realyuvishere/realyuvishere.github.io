@@ -1,0 +1,51 @@
+.images {
+    width: 100%;
+    height: 500px;
+    display: none;
+    animation-name: opac;
+    animation-duration: .3s;
+    -webkit-animation-name: opac;
+    -webkit-animation-duration: .5s;
+}
+.slides {
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
+}
+.slide {
+    height: 260px;
+    width: 100px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: "Segoe UI" , sans-serif;
+    position: absolute;
+    outline: 0;
+    top: 0%;
+    padding-top: 240px;
+    opacity: .1;
+    transition: .2s ease-out
+}
+.slide:hover {
+    opacity: .8
+}
+.right {
+    right: 0
+}
+.left {
+    left: 0
+}
+body {
+    margin: 0px
+}
+
+@keyframes opac {from{opacity: 0} to{opacity: 1}}
+@-webkit-keyframes opac {from{opacity: 0} to{opacity: 1}}
