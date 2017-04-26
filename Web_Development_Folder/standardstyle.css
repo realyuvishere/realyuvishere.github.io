@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Verdana;
+}
+input, button, textarea, form {
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000
+}
+a {
+    text-decoration: none
+}
+.spaced {
+    padding: 14px
+}
