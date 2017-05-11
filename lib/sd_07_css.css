@@ -21,8 +21,8 @@
 }
 .header {
     padding-top: 2%;
-    animation: 1s visible ease-out;
-    -webkit-animation: 1s visible ease-out;
+    animation: 2s visible ease-out;
+    -webkit-animation: 2s visible ease-out;
 	color: #fff;
 	font-family: 'Product Sans', 'Open Sans', sans-serif, Verdana;
 }
@@ -70,12 +70,23 @@
     margin-top: 10%;
     border: 6px solid #fff
 }
-.bod1 {
-	background-color: #000;
+.bod {
 	width: 100%;
 	height: auto;
 	text-align: center;
+	position: relative;
+	background-color: #000;
 }
+.bod1 {
+	background-image: url(photography_gallery/DSCN9659.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	animation: 1s visible ease-out;
+	-webkit-animation: 1s visible ease-out;
+}
+.bod2 {}
 .mainnav {
     width: auto;
     padding: 12px;
@@ -99,7 +110,110 @@
     border-bottom-style: solid
 }
 .maintext {
-	font-family: 'Open Sans', sans-serif, Verdana;
+	font-family: 'Josefin Sans', sans-serif, Verdana;
+    font-size: 28px;
+    text-align: left;
+    padding: 20px;
+    color: #b1b1b1;
+    width: 100%;
+    height: 100%;
+}
+.scrollup {
+	color: #fff;
+	background-color: #000;
+	font-size: 50px;
+	padding: 18px 30px;
+	cursor: pointer;
+	position: fixed;
+	z-index: 10;
+	margin-right: 10px;
+	margin-top: 10px;
+	transition: .4s ease-out;
+	display: none;
+}
+.scrollup:hover {
+	color: #000;
+	background-color: #fff
+}
+.block {
+	display: block;
+	animation: 1s frombottom ease-out;
+	-webkit-animation: 1s frombottom ease-out;
+}
+.card {
+	height: 400px !important;
+    width: 300px !important;
+    margin: 0px;
+	background-color: #fff;
+    margin-right: 30px;
+    text-align: left;
+    color: #fff !important;
+    padding: 20px !important;
+    flex-wrap: nowrap
+}
+.myworks {
+	padding-left: 10%
+}
+.photo {
+	background-image: url(photography_gallery/DSCN9557.JPG);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.socialmedia {
+	padding: 30px
+}
+.socdiv {
+	padding: 30px;
+}
+.soclinks {
+	background-color: #fff;
+	color: #000;
+	opacity: .6;
+	transition: .5s ease-out
+}
+.soclinks:hover {
+	opacity: 1
+}
+.fb {
+	padding: 18px 24px;
+	padding-top: 20px
+}
+.fb:hover {
+	background-color: #3b5998;
+	color: #fff
+}
+.yt {
+	padding: 18px 20px;
+	padding-top: 20px
+}
+.yt:hover {
+	color: #fff;
+	background-color: #cc181e
+}
+.ins {
+	padding: 18px 20px;
+	padding-top: 20px
+}
+.ins:hover {
+	background-color: #e91e63;
+	color: #fff
+}
+.tw {
+	padding: 18px 20px;
+	padding-top: 20px
+}
+.tw:hover {
+	background-color: #1da1f2;
+	color: #fff
+}
+.li {
+	padding: 18px 22px;
+	padding-top: 20px
+}
+.li:hover {
+	background-color: #0077b5;
+	color: #fff
 }
 
 @keyframes image{from{border-radius: 100%;transform: scale(1)}to{border-radius: 0%; transform: scale(1.2)}}
@@ -110,3 +224,8 @@
 @-webkit-keyframes zoomback{from{transform: scale(1.1)}to{transform: scale(1)}}
 @keyframes visible{from{opacity: 0}to{opacity: 1}}
 @-webkit-keyframes visible{from{opacity: 0}to{opacity: 1}}
+@keyframes frombottom{from{opacity: 0;margin-bottom: -300px}to{opacity: 1;margin-bottom: 0px}}
+@-webkit-keyframes frombottom{from{opacity: 0;margin-bottom: -300px}to{opacity: 1;margin-bottom: 0px}}
+/* get back here */
+@keyframes textappear{from{width: 0%}to{width: 100%}}
+@-webkit-keyframes textappear{from{width: 0%;height: 0%}to{width: 100%;height: 100%}}
