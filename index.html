@@ -22,15 +22,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="lib/sd_07_js.js"></script>
+	<style>
+	.modal.and.carousel {
+		position: fixed;
+		}
+	</style>
     </head>
     <body>
+		<div class="mainnav mainnavscr hide">
+        <ul class="nav scrnav">
+            <li class="links goabout scrlinks">About Me</li>/
+            <li class="links goworks scrlinks">My Works</li>/
+            <li class="links goachieve scrlinks">My Achievements</li>
+            </ul>
+        </div>
 		<span class="scrollup" id="scrollup" align="right">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
 			</span>
     <div class="intro" id="intro">
         <div class="introbod">
         <img src="lib/my%20pic.png" class="intropic">
-            <div class="imgoverlay" data-toggle="modal" data-target="#wholeimg">
+            <div class="imgoverlay1" data-toggle="modal" data-target="#wholeimg">
             <div class="text">Click to view the whole image.</div>
             </div>
         </div>
@@ -55,16 +67,653 @@
 		</div>
 		<div class="container bod">
 		<div class="header" id="works"><h1>My Works</h1></div>
-			<div class="maintext">
+			<div class="maintext panel-group" id="accordion">
 				<div class="w3-row-padding myworks">
-				<div class="card w3-col s4 photo"></div>
-				<div class="card w3-col s4 music"></div>
-				<div class="card w3-col s4 webd"></div>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+					<div class="card w3-col s4 photo container2">
+					<div class="imgoverlay2">
+                <div class="text">Photography</div>
+						</div>
+						</div></a>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+					<div class="card w3-col s4 music container2">
+					<div class="imgoverlay2">
+                <div class="text">Music</div>
+						</div>
+						</div></a>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+					<div class="card w3-col s4 webd container2">
+					<div class="imgoverlay2">
+                <div class="text">Web Designing</div>
+						</div>
+						</div></a>
 				</div>
+				<div class="panel panel-default">
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+			<h1 class="text-center">Photography</h1>
+		  <div class="row">
+    <div class="col-md-12 thumbnail">
+		<ul class="nav nav-tabs">
+    <li class=""><a data-toggle="tab" href="#nature">Nature</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+  </ul>
+		<div class="tab-content">
+    <div id="nature" class="tab-pane fade in">
+		<div class="caption text-center">
+            <p>Nature</p>
+          </div>
+			<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal"><img src="lib/photography_gallery/DSCN9244.JPG"></a>
+		  <div class="caption"></div>
+				</div>
+		</div>
+			<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="1"><img src="lib/photography_gallery/DSCN9245.JPG"></a>
+		  <div class="caption"></div>
+				</div>
+		</div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="2"><img src="lib/photography_gallery/DSCN9237.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="3"><img src="lib/photography_gallery/DSCN9250.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="4"><img src="lib/photography_gallery/DSCN9255.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="5"><img src="lib/photography_gallery/DSCN9258.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="6"><img src="lib/photography_gallery/DSCN9260.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="7"><img src="lib/photography_gallery/DSCN9547.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="8"><img src="lib/photography_gallery/DSCN9608.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="9"><img src="lib/photography_gallery/DSCN9609.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="10"><img src="lib/photography_gallery/DSCN9610.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="11"><img src="lib/photography_gallery/DSCN9393.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="12"><img src="lib/photography_gallery/DSCN9394.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="13"><img src="lib/photography_gallery/DSCN9402.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="14"><img src="lib/photography_gallery/DSCN9403.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="15"><img src="lib/photography_gallery/DSCN9451.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="16"><img src="lib/photography_gallery/DSCN9457.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="17"><img src="lib/photography_gallery/DSCN9626.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="18"><img src="lib/photography_gallery/DSCN9630.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="19"><img src="lib/photography_gallery/DSCN9628.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+		  <a href="#lightbox" data-toggle="modal" data-slide-to="20"><img src="lib/photography_gallery/DSCN9639.JPG"></a>
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9646.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9647.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9648.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9649.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9657.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9658.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9659.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9660.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9478.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9479.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9480.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9483.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9455.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9459.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9460.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9461.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9462.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9535.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9536.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9526.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9529.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9530.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9517.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9518.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9521.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9522.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9539.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9540.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9542.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9543.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9544.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9519.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9537.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9541.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9555.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9557.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9575.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9576.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9592.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9730.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9731.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9732.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9733.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9737.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9738.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9740.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+			</div>
+    <div id="menu2" class="tab-pane fade">
+			</div>
+    <div id="menu3" class="tab-pane fade">
+			</div>
+		</div>
+		<div class="modal fade and carousel slide" id="lightbox">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-body">
+                     <div class="carousel-inner">
+                       <div class="item active">
+                         <img src="lib/photography_gallery/DSCN9244.JPG">
+                       </div>
+                       <div class="item">
+                         <img src="lib/photography_gallery/DSCN9245.JPG">
+                       </div>
+                       <div class="item">
+                         <img src="lib/photography_gallery/DSCN9237.JPG">
+                       </div>
+					   <div class="item">
+                         <img src="lib/photography_gallery/DSCN9250.JPG">
+                       </div>
+					   <div class="item">
+                         <img src="lib/photography_gallery/DSCN9255.JPG">
+                       </div>
+					   <div class="item">
+                         <img src="lib/photography_gallery/DSCN9258.JPG">
+                       </div>
+					   <div class="item">
+                         <img src="lib/photography_gallery/DSCN9260.JPG">
+                       </div>
+					   <div class="item">
+                         <img src="lib/photography_gallery/DSCN9547.JPG">
+                       </div>
+					   <div class="item">
+                         <img src="lib/photography_gallery/DSCN9608.JPG">
+                       </div>
+					   <div class="item">
+                         <img src="lib/photography_gallery/DSCN9609.JPG">
+                       </div>
+					   <div class="item">
+                         <img src="lib/photography_gallery/DSCN9610.JPG">
+                       </div>
+						<div class="item">
+                         <img src="lib/photography_gallery/DSCN9393.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9394.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9402.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9403.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9451.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9457.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9626.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9630.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9628.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="lib/photography_gallery/DSCN9639.JPG">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+						 <div class="item">
+                         <img src="">
+                       </div>
+                     </div>
+                     <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
+                       <span class="glyphicon glyphicon-chevron-left"></span>
+                     </a>
+                     <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
+                       <span class="glyphicon glyphicon-chevron-right"></span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+		<!-- use this later maybe
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+		<div class="col-md-4">
+      <div class="thumbnail">
+          <img src="lib/photography_gallery/DSCN9237.JPG">
+		  <div class="caption"></div>
+		</div>
+		</div>
+-->
+			  </div>
+			</div>
+		  </div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+				<div class="panel panel-default">
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
 				<p class="socialmedia">Check me out on other social media networks and stay connected ;)</p>
 				<div class="socdiv">
 					<a href="https://www.facebook.com/KCN-m-1691546181118934/" target="_blank" class="soclinks fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://www.youtube.com/channel/UCvJnN7bsZNOgD1xZiStOU4g" target="_blank" class="soclinks yt"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+					<a href="https://www.youtube.com/channel/UCvJnN7bsZNOgD1xZiStOU4g" target="_blank" class="soclinks yt"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 					<a href="https://www.instagram.com/yuv_is_here/" target="_blank" class="soclinks ins"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					<a href="https://twitter.com/Yuv_is_here" target="_blank" class="soclinks tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					<a href="https://www.linkedin.com/in/yuvraj-s-49207710a/" target="_blank" class="soclinks li"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
