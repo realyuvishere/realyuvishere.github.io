@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+	text-align: center;
+}
+input, button, textarea, form {
+    outline: none;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000
+}
+a {
+	text-decoration: underline !important;
+	text-decoration-style: dotted !important;
+	text-decoration-color: #337ab7
+}
+a:hover {
+	text-decoration-style: solid !important
+}
+.bodybg {
+	background-color: #000
+}
+.intro {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	padding-top: 1.6%;
+	padding-bottom: 10%;
+	background-color: #000;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.introhead {
+	font-family: 'PT Sans', 'Futura', sans-serif, Verdana;
+	font-size: 6rem;
+	color: #fff;
+	padding: 20px;
+	animation: 2s zoom ease-out;
+	-webkit-animation: 2s zoom ease-out;
+}
+.subs {
+	font-family: 'Quicksand', Geneva, sans-serif, verdana;
+	color: #616967;
+	font-size: 2.6rem;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	padding: 18px;
+	animation: 2s fromleft ease-out;
+	-webkit-animation: 2s fromleft ease-out;
+}
+.underline {
+	display: block;
+	width: 20%;
+	border: 1px solid #fff;
+	margin: 0px !important;
+	animation: 2s expand ease-out;
+	-webkit-animation: 2s expand ease-out;
+}
+.heading {
+	font-size: 3rem;
+	font-family: 'Product Sans', 'Geneva', sans-serif, Verdana;
+	padding: 24px;
+	background-color: #333;
+	color: #fff;
+	position: relative;
+}
+.mainbod {
+	display: none
+}
+.btn {
+	outline: none !important;
+}
+#animate {
+	display: none
+}
+.animate {
+	animation: 2s fromright ease-out;
+	-webkit-animation: 2s fromright ease-out;
+}
+#block {
+	display: block !important
+}
+.fadeaway {
+	animation: 2s fade ease-out;
+	-webkit-animation: 2s fade ease-out;
+}
+#kmore {
+	font-family: 'Open Sans' !important;
+}
+.mainheader {
+	font-family: 'PT Sans', 'Futura', sans-serif, verdana;
+	font-size: 3rem;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	padding: 25px;
+	font-weight: 900;
+	color: #fff;
+	background-color: #2b3f54;
+	animation: 1s fromabove ease-out;
+	-webkit-animation: 1s fromabove ease-out
+}
+.relbod {
+	position: relative;
+	top: 118px;
+	padding-bottom: 200px;
+	animation: 2s frombottom ease-out;
+	-webkit-animation: 2s frombottom ease-out;
+}
+.designation, .name {
+	font-family: 'Montserrat', sans-serif, Verdana;
+	font-size: 2.4rem;
+	padding: 40px;
+	animation: 1.4s fromright ease-out;
+	-webkit-animation: 1.4s fromright ease-out;
+	position: relative
+}
+.name {
+	font-size: 2rem;
+	padding-top: 0px
+}
+.coret, .mcoret {
+	padding: 34px;
+	font-family: 'Product Sans', 'Futura', sans-serif, Verdana;
+	font-size: 3rem;
+	color: #546a7b;
+	text-align: center;
+	font-weight: 200;
+	animation: 1.4s zoom ease-out;
+	-webkit-animation: 1.4s zoom ease-out;
+}
+.mainfooter {
+	position: relative;
+	width: 100%;
+	background-color: #344b5d;
+	font-family: 'Quicksand', 'Geneva', sans-serif, Verdana;
+	font-size: 1.8rem;
+	padding: 30px;
+	color: #fff;
+	display: inline
+}
+.scrhead {
+	opacity: 0.6;
+	line-height: 1;
+	animation: 1s scrhead;
+	-webkit-animation: 1s scrhead;
+	transition: .4s ease-out opacity;
+	text-align: left
+}
+.scrhead:hover {
+	opacity: 1
+}
+.members {
+	padding: 20px;
+	padding-left: 40px
+}
+.card {
+	text-align: left !important;
+	height: 400px !important;
+    width: 260px !important;
+    background-color: #335f82;
+    margin: 0px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    color: #fff !important;
+    padding: 20px !important;
+    font-family: 'Quicksand', sans-serif, Verdana;
+    flex-wrap: nowrap;
+}
+.card-head, .card-content {
+	padding: 10px
+}
+.card-content {
+	font-size: 2rem
+}
+.contact {
+	padding: 20px;
+	border-top: 2px solid #16507d;
+	background-color: rgba(101, 141, 173, 0.41)
+}
+.logo {
+	height: 56.3203125px;
+	width: 56.3203125px;
+	cursor: pointer
+}
+.describe {
+	font-size: 3rem;
+	font-family: 'PT Sans', geneva, verdana;
+	color: #fff;
+	padding: 20px;
+}
+.logob {
+	height: 267px;
+	width: 267px;
+	animation: 2s zoom ease-out;
+	-webkit-animation: 2s zoom ease-out;
+}
+.logos {
+	width: 267px;
+	height: 267px;
+	animation: 2s logoa ease-out;
+	-webkit-animation: 2s logoa ease-out;
+	margin-top: 50px
+}
+.fcard {
+	text-align: center;
+	height: 400px !important;
+    width: 280px !important;
+    background-color: #006699;
+    margin: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #fff !important;
+    padding: 20px !important;
+    font-family: 'Quicksand', sans-serif, Verdana;
+    flex-wrap: nowrap;
+	padding-top: 50px !important;
+	cursor: pointer;
+	transition: .4s ease-out box-shadow !important;
+}
+.fcard:hover {
+	color: #006699 !important;
+	background-color: #fff;
+	box-shadow: 4px 6px 12px #aaa
+	
+}
+.fcard-head, .fcard-content {
+	padding: 10px;
+}
+.fcard-head {
+	font-size: 10rem
+}
+.togglebar {
+	padding: 20px
+}
+#fcards {
+	display: none
+}
+.mcoret {
+	font-size: 2.8rem;
+	color: #fff;
+	padding: 28px
+}
+.close {
+	font-size: 4rem !important;
+	padding-top: 20px !important;
+	padding-right: 20px !important
+}
+.prez {
+	color: #337ab7;
+	padding-top: 10px !important
+}
+.mainnav
+
+@keyframes zoom{0%{opacity: 0;transform: scale(0)}50%{opacity: 1;transform: scale(1.3)}100%{transform: scale(1)}}
+@-webkit-keyframes zoom{0%{opacity: 0;transform: scale(0)}50%{opacity: 1;transform: scale(1.3)}100%{transform: scale(1)}}
+@keyframes fromleft{from{opacity: 0;margin-left: -300px}to{opacity: 1;margin-left: 0px}}
+@-webkit-keyframes fromleft{from{opacity: 0;margin-left: -300px}to{opacity: 1;margin-left: 0px}}
+@keyframes fromright{from{opacity: 0;margin-right: -300px}to{opacity: 1;margin-right: 0px}}
+@-webkit-keyframes fromright{from{opacity: 0;margin-right: -300px}to{opacity: 1;margin-right: 0px}}
+@keyframes fromabove{from{opacity: 0;margin-top: -300px}to{opacity: 1;margin-top: 0px}}
+@-webkit-keyframes fromabove{from{opacity: 0;margin-top: -300px}to{opacity: 1;margin-top: 0px}}
+@keyframes frombottom{from{opacity: 0;margin-bottom: -300px}to{opacity: 1;margin-bottom: 0px}}
+@-webkit-keyframes frombottom{from{opacity: 0;margin-bottom: -300px}to{opacity: 1;margin-bottom: 0px}}
+@keyframes expand{from{width: 0%}to{width: 20%}}
+@-webkit-keyframes expand{from{width: 0%}to{width: 20%}}
+@keyframes goleft{from{opacity: 1;margin-left: 0px}to{opacity: 0;margin-left: -300px}}
+@-webkit-keyframes goleft{from{opacity: 1;margin-left: 0px}to{opacity: 0;margin-left: -300px}}
+@keyframes goright{from{opacity: 1;margin-right: 0px}to{opacity: 0;margin-right: -300px}}
+@-webkit-keyframes goright{from{opacity: 1;margin-right: 0px}to{opacity: 0;margin-right: -300px}}
+@keyframes fade{from{opacity: 1}to{opacity: 0}}
+@-webkit-keyframes fade{from{opacity: 1}to{opacity: 0}}
+@keyframes scrhead{from{opacity: 1;line-height: inherit;text-align: center}to{opacity: 0.6;line-height: 1;text-align: left}}
+@-webkit-keyframes scrhead{from{opacity: 1;line-height: inherit;text-align: center}to{opacity: 0.6;line-height: 1;text-align: left}}
+@keyframes logoa{from{opacity: 0;border-radius: 100%;transform: scale(0.6)}to{opacity: 1;border-radius: 0px;transform: scale(1)}}
+@-webkit-keyframes logoa{from{opacity: 0;border-radius: 100%;transform: scale(0.6)}to{opacity: 1;border-radius: 0px;transform: scale(1)}}

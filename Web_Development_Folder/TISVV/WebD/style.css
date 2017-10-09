@@ -1,0 +1,294 @@
+body {
+	overflow: hidden;
+	font-family: 'Product Sans';
+	position: relative
+}
+a, p {
+	letter-spacing: 1px;
+	outline: none !important
+}
+a {
+	text-decoration: none !important
+}
+ul {
+	list-style-type: none
+}
+button, input, textarea {
+	cursor: pointer;
+	outline: none !important;
+	font-family: 'Product Sans';
+	letter-spacing: 1px
+}
+.intro {
+	text-align: center;
+	padding-top: 50%;
+	border-radius: 0px;
+	padding-bottom: auto
+}
+.intrologo {
+	font-family: 'Product Sans';
+	color: #333;
+	font-size: 8rem;
+	font-weight: 100;
+	overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+	animation: typing 5s;
+	-webkit-animation: typing 5s;
+}
+.logoblue {
+	color: #4285f4
+}
+.logored {
+	color: #ea4335
+}
+.logoyellow {
+	color: #fbb605
+}
+.logogreen {
+	color: #34a853
+}
+.sub {
+	font-size: 6rem;
+	animation: typing 7s;
+	-webkit-animation: typing 7s;
+}
+.introsub {
+	padding-top: 20px;
+}
+#explorebtn {
+	letter-spacing: 1px;
+	animation: 2s fromabove;
+	-webkit-animation: 2s fromabove;
+	display: none
+}
+.fadeaway {
+	animation: fadeout 2s;
+	-webkit-animation: fadeout 2s;
+}
+.mainbod {
+	background-color: #000;
+	color: #fff;
+	animation: visible 1s;
+	-webkit-animation: visible 1s;
+	height: 1000px;
+	width: 100%;
+	transition: .8s ease-out;
+	z-index: 5
+}
+.fadein {
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+}
+.bodcard {
+	display: none;
+	position: relative;
+	color: #fff;
+	padding: 40px;
+}
+#card1 {
+	text-align: center
+}
+#vid {
+	padding-top: 20px
+}
+.script {
+	display: none
+}
+.start {
+	font-size: 10rem;
+	color: #aaa;
+	cursor: pointer;
+	transition: .6s ease-out
+}
+.start:hover {
+	color: #333;
+	padding-top: 8px
+}
+.navbar {
+	border-radius: 0px
+}
+#signin, #signin2, #signin3 {
+	font-size: 2rem
+}
+.codelabs, .conve {
+	padding: 20px;
+	padding-left: 40px;
+	overflow: auto;
+	position: relative
+}
+.codelabs h3 {
+	letter-spacing: 1px
+}
+.appbod {
+	border: 1px solid #aaa;
+	padding: 20px;
+	width: auto;
+	margin: 10px;
+	cursor: pointer;
+	text-align: right;
+	transition: .4s ease-out
+}
+.appbod:hover {
+	background-color: #dce0e2;
+	margin-top: -2px
+}
+.appimg {
+	height: 50%;
+	width: 50%;
+}
+.convapps {
+	position: relative
+}
+.applist li {
+	display: inline-block;
+	vertical-align: top;
+}
+.clbod {
+	width: 300px;
+	margin: 20px;
+	letter-spacing: 1px
+}
+.clhead {
+	background-color: #4285f4;
+	color: #fff;
+	padding: 20px;
+	font-size: 2rem;
+	text-align: center
+}
+.clcon, .clfoot, .clsubs {
+	padding: 20px;
+	color: #333;
+}
+.clsubs {
+	color: #adafae;
+	font-size: 1.5rem
+}
+.clcon {
+	background-color: #fff;
+	font-family: 'Product Sans';
+	font-size: 1.9rem;
+}
+.clfoot {
+	background-color: #eceeef;
+	padding: 14px
+}
+.clfoot button {
+	font-family: 'Quicksand';
+	text-decoration: none !important;
+	transition: .4s ease-out
+}
+.clfoot button:hover {
+	background-color: rgba(0,0,0,0.1)
+}
+.clborder {
+	border: 1px solid #aaa;
+	border-top: 0px;
+}
+.btn-link .ripple-effect-box {
+	z-index: 3
+} 
+
+.btn-link .ripple-effect {
+	background-color: rgba(0,0,0,0.2)
+}
+.intlogo {
+	width: 10%;
+	height: 10%;
+	border-radius: 100%
+}
+.clhead .intlogo {
+	width: 20%;
+	height: 20%
+}
+#card2 {
+	padding-top: 0px
+}
+
+@keyframes typing {from{width: 0}to{width: 100%}}
+@-webkit-keyframes typing {from{width: 0}to{width: 100%}}
+@keyframes backgroundc {0%{background-color: #fff}100%{background-color: #eceeef}}
+@-webkit-keyframes backgroundc {0%{background-color: #fff}100%{background-color: #eceeef}}
+@keyframes fromabove{from{opacity: 0;margin-top: -300px}to{opacity: 1;margin-top: 0px}}
+@-webkit-keyframes fromabove{from{opacity: 0;margin-top: -300px}to{opacity: 1;margin-top: 0px}}
+@keyframes fadeout{from{opacity: 1}to{opacity: 0;margin-top: -100px}}
+@-webkit-keyframes fadeout{from{opacity: 1}to{opacity: 0;margin-top: -100px}}
+@keyframes fadein{from{opacity: 0;margin-top: -100px}to{opacity: 1;margin-top: 0px}}
+@-webkit-keyframes fadein{from{opacity: 0;margin-top: -100px}to{opacity: 1;margin-top: 0px}}
+@keyframes visible{from{opacity: 0}to{opacity: 1}}
+@-webkit-keyframes visible{from{opacity: 0}to{opacity: 1}}
+
+/* mobile.css */
+
+@media screen and (max-width: 1366px) {
+	.intro {
+		padding-top: 17%;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.intro {
+		padding-top: 20% !important
+	}
+}
+
+html.fssopen, html.fssopen body{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+section.dd_fullscreenslider{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    z-index: 2000;
+	font-size: 16px;
+	visibility: visible;
+	overflow: hidden;
+}
+
+div.slidewrapper{ 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0); 
+	-moz-transition: -moz-transform 0.5s; 
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+section.dd_fullscreenslider article.slide{ 
+    width: 100%;
+    height: 100%;
+	display: block;
+	overflow: hidden;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+section.dd_fullscreenslider article.slide h2{ 
+	font-size: 3em;
+	margin: 0;
+	line-height: 1.1em;
+	letter-spacing: 3px;
+}
+
+section.dd_fullscreenslider article.slide .scrollable{
+	overflow: auto;
+}
+
+section.dd_fullscreenslider article.slide:nth-of-type(3){ 
+	background: #f9f9f9;
+}
+
+section.dd_fullscreenslider article.slide:nth-of-type(4){ 
+	background: #eceeef;
+}

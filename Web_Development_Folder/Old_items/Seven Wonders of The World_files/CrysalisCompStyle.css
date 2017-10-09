@@ -1,0 +1,50 @@
+button.present {color: #cddc39;background-color: #fff}
+button {font-size: 30px;font-family: verdana;color: #fff;text-decoration: none;transition: background-color .2s ease-out;margin: 0px; margin-top: 8px;cursor: pointer;outline: none;height: 49px;border: 0px;background-color: #4caf50; width: 384px; text-align: left;border-right: 4px solid;}
+button:hover {color:#cddc39;background-color: #fff}
+button.al:focus {color: #fff;background-color: rgba(0, 128, 128, 0.71)}
+button.mn:focus {color: #fff;background-color: rgba(158, 87, 234, 0.65)}
+button.bk:focus {color: #fff;background-color: rgba(58, 155, 244, 0.76)}
+button.cj:focus {color: #fff;background-color: rgba(0, 128, 0, 0.56)}
+button.di:focus {color: #fff;background-color: rgba(255, 192, 0, 0.59)}
+button.eh:focus {color: #fff;background-color: rgba(232, 131, 29, 0.72)}
+button.fg:focus {color: #fff;background-color: rgba(244, 67, 54, 0.72)}
+a.meaning {color: #5bcbf5;text-decoration: underline;font-size: 20px;cursor: pointer}
+div.mainContent , div.mainContent2 {font-size: 20px;font-family: verdana;width: 64%;float: right;cursor: default;margin: 10px 0px;padding-right: 14px}
+div.mainContent {-webkit-animation-name:animateright;-webkit-animation-duration:0.4s;animation-name:animateright;animation-duration:0.4s}
+nav.navBar {background-color: #4caf50;padding-left: 30px;width: 30%; padding-bottom: 276px;margin-top: 0px;padding-top: 10px;position: fixed;cursor: default;-webkit-animation-name:animateleft;-webkit-animation-duration:0.4s;animation-name:animateleft;animation-duration:0.4s}
+body {margin: 0px}
+div.fact1 {text-decoration: underline;color: #f5f5f5;font-size: 22px;margin-bottom: 10px;cursor: default}
+div.fact {background-color: #3a81b7;color: #fff;font-family: verdana ;font-size: 20px;width: 66%;float: right;margin: 10px 0px;padding: 12px;padding-right: 0px;cursor: default}
+header.meanHead{color: #fff;font-size: 40px;font-family: verdana , sans-serif;margin: 0px; background-color: #aaa;padding: 18px 20px;cursor: default;position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duration:0.4s;animation-name:animatebottom;animation-duration:0.8s;z-index: 10}
+div.header#home{color: #fff;font-size: 40px;font-family: verdana , sans-serif;margin-top: 10px; background-color: #52b6dc;padding: 4px 0px;cursor: default;position:relative;-webkit-animation-name:animatetop;-webkit-animation-duration:0.4s;animation-name:animatetop;animation-duration:0.4s;}
+div.mainContent1 {font-size: 20px;font-family: verdana;width: 80%;text-align: left;margin-bottom: 20px;cursor: default;position:relative;-webkit-animation-name:animatetopa;-webkit-animation-duration:0.4s;animation-name:animatetopa;animation-duration:0.8s;background-color: rgba(58, 129, 183, 0.65);color: #fff;padding: 22px}
+img.imgmean {width: 440px;height: 330px;float: none;margin-bottom: 10px;position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duration:0.4s;animation-name:animatebottom;animation-duration:0.8s;box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19)}
+.mainBod {padding:2px 0px}
+.mainBod:after {content:"";display:table;clear:both;}
+.info1 {z-index:1;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4);margin-bottom: 200px}
+.info1:target {display:block;}
+.infoBod {margin:auto;background-color:#f3f3f3;position:relative;padding:0;outline:0;border:1px #555 solid;width:600px;position:relative;-webkit-animation-name:animatetop;-webkit-animation-duration:0.4s;animation-name:animatetop;animation-duration:0.4s;box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19) !important}
+h2 {font-family:  verdana,sans-serif;cursor: default; font-size: 40px;margin: 0px;font-weight: normal}
+img {float: left;margin: 14px 26px}
+.infoHead , .infoHead2 , .infoHead3 , .infoHead4 , .infoHead5 , .infoHead6 , .infoHead7 , .meanHead{padding:18px 20px;background-color: rgba(0, 128, 128, 0.71);color: #f5f5f5}
+.infoHead2 {background-color: rgba(158, 87, 234, 0.65)}
+.infoHead3 {background-color: rgba(58, 155, 244, 0.76)}
+.infoHead4 {background-color: rgba(0, 128, 0, 0.56)}
+.infoHead5 {background-color: rgba(255, 192, 0, 0.59)}
+.infoHead6 {background-color: rgba(232, 131, 29, 0.72)}
+.infoHead7 {background-color: rgba(244, 67, 54, 0.72)}
+.btnClose {text-decoration:none;float:right;font-size:24px;font-weight:bold;color: #fff;cursor:pointer;font-family: sans-serif , verdana;margin: 0px; transition: color .2s ease-out}
+.btnClose:hover , .btnClose:active {color:#000;text-decoration:none}
+@media (max-width:601px){.infoBod {margin:50px 10px 10px 10px;width:auto !important;}}
+@media (max-width:768px){.infoBod {width:500px}}
+@media (min-width:992px){.infoBod {width:900px}}
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0;} to{top:0;opacity:1}}
+@-webkit-keyframes animatetopa{from{top:-300px;opacity:0;width: 30%} to{top:0;opacity:1;width: 80%}}
+@keyframes animatetopa{from{top:-300px;opacity:0;padding: 0px} to{top:0;opacity:1;padding: 22px}}
+@-webkit-keyframes animatebottom{from{bottom:-120px;opacity:0} to{bottom:0;opacity:1}}
+@keyframes animatebottom{from{bottom:-120px;opacity:0} to{bottom:0;opacity:1}}
+@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}

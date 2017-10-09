@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+fieldset {
+     width: 32%;
+</style>
+<script>
+function myFunction() {
+   var x = document.getElementById("demo");
+   x.style.fontSize = "25px";
+   x.style.color = "red";
+}
+</script>
+<script>
+function myFunction2() {
+   var x = document.getElementById("pass");
+   x.type = "text";
+}
+</script>
+<script>
+function myFunction3() {
+   var x = document.getElementById("pass");
+   x.type = "password";
+}
+</script>
+<script>
+function myFunction4() {
+   document.getElementById("demo2").innerHTML = "changed!";
+}
+</script>
+<script>
+function theFunction() {
+   document.getElementById("demo2").innerHTML = "and it is back again?";
+}
+</script>
+<script>
+function theFunction2() {
+   document.getElementById("demo2").innerHTML = "a paragraph is about to get ......";
+}
+</script>
+<script>
+function myFunction5() {
+   var x = document.getElementById("demo");
+   x.style.fontSize = "";
+   x.style.color = "";
+}
+</script>
+<script>
+function showHide() {
+  var x = document.getElementById('allOne');
+    if (x.type === "text"){
+        x.type = "password";
+    } else {
+        x.type = "text"
+    }
+}
+</script>
+<script>
+    function timebatao(){
+        var t = document.getElementById('timepara');
+        t.innerHTML = Date()
+    }
+    </script>
+</head>
+<title>java test
+</title>
+<body>
+<h1> testing the javaScript </h1>
+<p> this text is for testing. </p>
+<form>
+<fieldset>
+<legend id="demo"> Testing in Progress</legend>
+Name:<input type="text">
+Password:<input type="password" name="passcode" id="pass">
+</fieldset>
+</form><br>
+<button type="button" onclick="myFunction()"> Click This!  </button> |
+<button type="button" onclick="myFunction2()"> Click This to show password  </button> |
+<button type="button" onclick="myFunction3()"> Click This to hide password  </button> |
+<button type="button" onclick="myFunction5()"> Click This to reset the heading </button>
+<br><br><hr color="black">
+<p id="demo2"> a paragraph is about to get ...... </p><br><br>
+<button type="button" onclick="myFunction4()"> Let's do it!!! </button> |
+<button type="button" onclick="theFunction()"> Changed!! </button> |
+<button type="button" onclick="theFunction2()"> Back Again!!! </button><br><br><hr size="2">
+<form>
+<fieldset>
+<legend id="demo"> Testing in Progress</legend>
+Name:<input type="text">
+Password:<input type="password" name="passcode" id="allOne"><br><br>
+<button type="button" onclick="showHide()" id="button1"> Show/Hide Password </button>
+</fieldset>
+</form>
+    <div>
+    <p id="timepara"></p>
+        <button onclick="timebatao()">Click me for time!</button>
+    </div>
+</body>
+</html>

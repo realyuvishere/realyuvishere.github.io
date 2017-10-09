@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Google</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="sd-style-01.css">
+    <link rel="icon" href="google_original.ico">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Yuvraj Sharma">
+    <meta name="application-name" content="Google">
+    <script src="sd-javascript-01.js"></script>
+    </head>
+    <body class="bodytag">
+    <div class="head">
+        <a class="links ured">Gmail</a><a class="links ugreen">Images</a><div class="login"><a class="links icons menu" onclick="getElementById('gappsm').style.display = 'block'"><i class="fa fa-bars" aria-hidden="true"></i></a><a class="links icons signin"><span class="animate"><i class="fa fa-sign-in" aria-hidden="true"></i></span></a></div>
+        </div>
+        <div class="trends">
+            <div class="thead" onclick="trends()">Check out what's trending these days!</div>
+            <div class="tbod" id="trendbod"><ul class="settmul">
+                <li><a class="links ftlinks ublue">Donald Trump</a></li>
+                <li><a class="links ftlinks ublue">New Indian Currency</a></li>
+                <li><a class="links ftlinks ublue">Narendra Modi</a></li>
+                <li><a class="links ftlinks ublue">Game of Thrones Memes</a></li>
+                </ul></div>
+            </div><br>
+    <div class="mainbod">
+        <form class="searcharea">
+        <img src="googledoodle_original.png" class="doodle">
+            <div class="formcontain">
+        <input class="search" id="sbar"><br><br>
+        <button class="searchbtn fromleft">Search Google</button><button class="searchbtn fromright wgreen" id="fromr">I'm Feeling Lucky</button></div><br><br>
+        </form>
+        <div class="outter" id="gappsm">
+        <div class="inner">
+            <header class="mheads w3-blue">Google Apps <span class="closebtn" onclick="getElementById('gappsm').style.display = 'none'">&times;</span></header>
+            <div class="w3-row-padding w3-container gappmbod">
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gaccount.png"><br><span class="appnames">My Account</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gtransla.png"><br><span class="appnames">Translate</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gmaps.png"><br><span class="appnames">Maps</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gmail.png"><br><span class="appnames">Gmail</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gcalen.png"><br><span class="appnames">Calender</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gdrive.png"><br><span class="appnames">Drive</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gnews.png"><br><span class="appnames">News</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gphotos.png"><br><span class="appnames">Photos</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gplay.png"><br><span class="appnames">Play</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\gplus.png"><br><span class="appnames">Google+</span></div>
+            <div class="w3-col s4 gicons"><img class="gapps" src="googleapps_icons\youtube.png"><br><span class="appnames">Youtube</span></div>
+            </div>
+            <footer class="gappmfoot mheads">More</footer>
+            </div>
+        </div>
+        <div class="outter" id="settm">
+        <div class="inner">
+            <header class="mheads w3-teal"> Settings <i class="fa fa-gear fa-spin" aria-hidden="true"></i><span class="closebtn" onclick="getElementById('settm').style.display = 'none'">&times;</span></header>
+            <div class="settmbod">
+            <ul class="settmul">
+                <li><a class="links ftlinks">Search settings</a></li>
+                <li><a class="links ftlinks">Advanced search</a></li>
+                <li><a class="links ftlinks">History</a></li>
+                <li><a class="links ftlinks">Search Help</a></li>
+                <li><a class="links ftlinks">Send Feedback</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        <footer class="pgfoot">
+            <div class="foot"><a class="links ftlinks">Advertising</a><a class="links ftlinks">Business</a><a class="links ftlinks">About</a><div class="footr"><a class="links ftlinks">Privacy</a><a class="links ftlinks">Terms</a><a class="links ftlinks" onclick="getElementById('settm').style.display = 'block'">Settings</a></div></div>
+            </footer>
+    </body>
+</html>
