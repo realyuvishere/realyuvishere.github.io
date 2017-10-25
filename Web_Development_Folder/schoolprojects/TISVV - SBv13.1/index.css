@@ -1,0 +1,61 @@
+html {
+	font-size: 10px
+}
+body {
+    margin: 0;
+    padding: 0;
+	overflow: hidden
+}
+input, button, textarea, form {
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000
+}
+a {
+    text-decoration: none
+}
+.intro {
+	height: 50vh;
+	width: 100%;
+	background-color: #333;
+	padding-top: 50vh;
+	text-align: center;
+}
+.logo {
+	font-family: 'Product Sans';
+	color: #fff;
+	font-size: 6rem;
+	animation: 5s typing;
+	margin: 0 auto;
+}
+.tyl {
+	overflow: hidden;
+    white-space: nowrap;
+}
+.lred {
+	color: #EA4335
+}
+.lgreen {
+	color: #34A853
+}
+.lblue {
+	color: #4285F4
+}
+.lyellow {
+	color: #FBBC05
+}
+.rot {
+	transform: rotate(280deg);
+	-webkit-transform: rotate(280deg);
+}
+/*
+$red: #EA4335;
+$green: #34A853;
+$blue: #4285F4;
+$yellow: #FBBC05;
+*/
+@keyframes typing {from{width: 0}to{width: 100%}}
+@-webkit-keyframes typing {from{width: 0}to{width: 100%}}
