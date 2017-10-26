@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>How to create a typewriter or typing effect with jQuery</title>
+    
+    <style>
+        body{
+            text-align: center;
+        }
+        
+        #container{
+            font-size: 24px;
+        }  
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="container"></div>
+
+    <!-- 
+        We use Google's CDN to serve the jQuery js libs. 
+        To speed up the page load we put these scripts at the bottom of the page 
+    -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    
+    <script>
+            
+        //define text
+        var text = 'This is a typewriter effect. You can change this text easily ...';
+
+        //text is split up to letters
+        $.each(text.split(''), function(i, letter){
+
+            //we add 100*i ms delay to each letter 
+            setTimeout(function(){
+
+                //we add the letter to the container
+                $('#container').html($('#container').html() + letter);
+            
+            }, 100*i);
+        });
+
+    </script>
+
+</body>
+</html>

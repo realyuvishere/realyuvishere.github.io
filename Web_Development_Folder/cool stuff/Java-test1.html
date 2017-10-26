@@ -1,0 +1,75 @@
+<html>
+<head>
+    <script>
+    var answer = prompt("Hey there, I am testing javascript, you like it?");
+    if (answer === "yes") {
+        confirm("Thanks :D")
+    } else {
+        confirm("I will try to improve :/")
+    }
+        var func = function(random) {
+            var another = prompt("Thanks for doing this wonderful stuff, wanna know how I do it?");
+            if (another === "yes") {
+                document.getElementById('test1').innerHTML = "Okay, join our website Code The Web for more!";
+                document.getElementById('test1').style.backgroundColor = "#4caf50";
+                document.getElementById('test1').style.transition = "1s background-color ease-out";
+            } else if (another === "no") {
+                document.getElementById('test1').innerHTML = "No problems!";
+                document.getElementById('test1').style.backgroundColor = "#000";
+                document.getElementById('test1').style.transition = "1s background-color ease-out";
+            } else {
+                window.alert("Input wrong!");
+            }
+        }
+    </script>
+    <title>
+    JavaScript Testing Page
+    </title>
+    <style>
+        div {
+            background-color: #ccc;
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            font-family: verdana , sans-serif;
+            font-size: 30px;
+            padding-right: 0px;
+            padding-left: 0px;
+            text-align: center;
+            animation-name: anidown;
+            animation-duration: .5s;
+            -webkit-animation-name: anidown;
+            -webkit-animation-duration: .5s;
+        }
+        body {
+            margin: 0px
+        }
+        p {
+            color: #fff;
+            background-color: #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 38px;
+            transition: 1s background-color ease-out;
+            animation-name: aniup;
+            animation-duration: .5s;
+            -webkit-animation-name: aniup;
+            -webkit-animation-duration: .5s;
+        }
+        
+        @keyframes anidown{from{top: -300px;opacity: 0} to{top: 0;opacity: 1}}
+        @-webkit-keyframes anidown{from{top: -300px;opacity: 0} to{top: 0;opacity: 1}}
+        @keyframes aniup{from{bottom: -1000px;opacity: 0} to{bottom: 0;opacity: 1}}
+        @-webkit-keyframes aniup{from{bottom: -1000px;opacity: 0} to{bottom: 0;opacity: 1}}
+    </style>
+    <link rel="icon" href="JS-icon.jpg">
+    </head>
+    <body>
+        <div>
+            <button style="padding: 10px;color: #fff;background-color: #000;border: 0px;outline: none;cursor: pointer;background: linear-gradient(-45deg, #69c8e7 0%, #49d3b4 100%);" onclick="func()">Click Here for more</button>
+        </div><br>
+        <p id="test1"></p>
+    </body>
+</html>

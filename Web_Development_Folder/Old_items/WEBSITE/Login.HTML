@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <link rel="icon" type="image/png" href="GFSPL-LOGO.bmp">
+<script>
+function authorCheck() {
+ if(form.username.value == "yuvrajrocks" && form.password.value == "slipknot")
+  {
+    window.open('GFSPL1.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script>
+<title>
+Login </title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="navigation" id="navBar">
+<ul class="navbar">
+<li class="navbar"><A HREF="index.HTML"> Home</A></li> |
+<li class="navbar"><A HREF="Contact Us.HTML"> Contact Us</A></li> |
+<li class="navbar"><A HREF="Login.HTML" id="activeLinkNav"> Login</A></li> |
+<li class="navbar"><A HREF="Feedback.HTML"> Feedback</A></li> |
+<li class="navbar"><A HREF="Membership.HTML"> Membership</A></li>
+</ul></div>
+<center>
+<form class="loginForm" id="loginForm" name="login" id="login" method="post">
+<div class="inputs" id="loginInputs">
+<input type="text" name="username" class="userInput" id="author" placeholder="Username" required>
+<br>
+<input type="password" name="password" class="passCode" id="pass" placeholder="Password" required><br>
+<input type="submit" value="Login" class="logIn" id="logIn" onclick="authorCheck()">
+</form>
+    </center>
+</body>
+</html>
