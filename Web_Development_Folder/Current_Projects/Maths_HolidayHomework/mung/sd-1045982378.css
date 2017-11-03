@@ -1,0 +1,156 @@
+body {
+    margin: 0px
+}
+.navbar {
+    position: fixed;
+    background-color: #5bcbf5;
+    padding-top: 120px;
+    padding-bottom: 300px;
+    padding-left: 30px;
+    width: 350px;
+    height: 2000px;
+    animation-name: fromLeft;
+    animation-duration: .5s;
+    -webkit-animation-name: fromLeft;
+    -webkit-animation-duration: .5s;
+    z-index: 9;
+    margin-top: -90px
+}
+.navcon {
+    color: #fff;
+    font-family: sans-serif , verdana;
+    font-size: 30px;
+    text-decoration: none;
+    border: none;
+    border-right: 4px solid #fff;
+    background-color: #5bcbf5;
+    cursor: pointer;
+    outline: none;
+    width: 350px;
+    text-align: left;
+    transition: .2s ease-out;
+    transition-property: background-color , color;
+    padding: 10px
+}
+.navcon:hover {
+    color: #5bcbf5;
+    border-right-color: #5bcbf5;
+    background-color: #fff
+}
+.present {
+    color: #0f77ab;
+    border-right-color: #0f77ab;
+    background-color: #fff
+}
+header {
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif , verdana;
+    font-size: 40px;
+    padding: 10px 0px;
+    background-color: #0f77ab;
+    position: relative;
+    cursor: default;
+    width: 100%;
+    animation-name: animatetop;
+    animation-duration: .5s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: .5s;
+    z-index: 10
+}
+a {
+    text-decoration: none;
+    color: #fff
+}
+.maincon {
+    font-size: 20px;
+    font-family: verdana;
+    width: 64%;
+    float: right;
+    cursor: default;
+    margin: 50px 0px;
+    padding-right: 14px;
+    position: relative;
+    animation-name: fromRight;
+    animation-duration: .5s;
+    -webkit-animation-name: fromRight;
+    -webkit-animation-duration: .5s; 
+}
+.convert {
+    border: 3px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-family: verdana;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: hidden;
+    transition: .3s ease-out;
+    transition-property: background-color;
+}
+.convert:hover {
+    background-color: #50c5f1
+}
+.inputs {
+    border: 3px solid #000;
+    font-family: verdana;
+    font-size: 20px;
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    width: 80px;
+    transition: .3s ease-out;
+    transition-property: width , border-color , color
+}
+.inputs:focus {
+    width: 290px;
+    cursor: text;
+    border-color: #0f77ab;
+    color: #0f77ab
+}
+.ripple {
+    position:relative;
+}
+.ripple:after {
+    content:"";
+    background-color: #f3f3f3;
+    display:block;
+    position:absolute;
+    padding-top:300%;
+    padding-left:350%;
+    margin-left:-20px!important;
+    margin-top:-120%;
+    opacity:0;
+    transition:all 0.8s;
+}
+.ripple:active:after {
+    padding:0;
+    margin:0;
+    opacity:1;
+    transition:0s;
+}
+.conhead {
+    font-size: 36px;
+    background-color: #ff5f5f;
+    color: #fff;
+    padding: 20px;
+    padding-left: 40px;
+    margin-left: -68px;
+    margin-right: -14px
+}
+.innercon {
+    padding-left: 40px
+}
+
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0;} to{top:0;opacity:1}}
+@keyframes fromLeft{from{left: -300px;opacity: 0;}to{left: 0px;opacity: 1;}}
+@-webkit-keyframes fromLeft{from{left: -300px;opacity: 0;}to{left: 0px;opacity: 1;}}
+@keyframes fromRight{from{right: -3000px;opacity: 0;}to{right: 0px;opacity: 1;}}
+@-webkit-keyframes fromRight{from{right: -3000px;opacity: 0;}to{right: 0px;opacity: 1;}}
+@keyframes frombottom{from{bottom: -3000px;opacity: 0;}to{bottom: 0px;opacity: 1;}}
+@-webkit-keyframes frombottom{from{bottom: -3000px;opacity: 0;}to{bottom: 0px;opacity: 1;}}
+@keyframes fromopa{from{opacity: 0;}to{opacity: 1;}}
+@-webkit-keyframes fromopa{from{opacity: 0;}to{opacity: 1;}}
