@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)http://www.dynamicdrive.com/dynamicindex17/ddfullscreenslider.htm#slide1 -->
+<html class="fssopen"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<link href="./ddfullscreenslider_files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./ddfullscreenslider_files/ddfullscreenslider.css">
+
+<style>
+/* Responsive CSS for demo */
+
+section.dd_fullscreenslider article.slide img{
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-height: 700px){ /* Decrease height of "intro" element and make it scrollable instead */
+	#intro{
+		height: 400px;
+	}
+
+	#coconutsbody{ /* Decrease height of "coconutsbody" element and make it scrollable instead */
+		height: 200px !important;
+	}
+}
+
+@media (max-width: 740px){
+
+	section.dd_fullscreenslider article.slide{
+		line-height: 1.5em !important;
+	}
+	
+	section.dd_fullscreenslider article.slide h2{
+		font-size: 2em !important;
+	}
+	
+	section.dd_fullscreenslider article.slide .scrollable{
+		width: 100% !important;
+	}
+
+}
+
+</style>
+
+<script src="./ddfullscreenslider_files/jquery.min.js"></script>
+<script src="./ddfullscreenslider_files/jquery.mousewheel.min.js"></script>
+
+<script src="./ddfullscreenslider_files/ddfullscreenslider.js">
+
+/***********************************************
+* DD Full Screen Slider- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<script>
+
+var fss // register arbitrary global variable
+
+jQuery(function(){
+	fss = new ddfullscreenslider({
+		sliderid: 'ddfss', // id of main slider container
+		sliderstate: 'open' // default state of slider
+	})
+})
+
+</script>
+
+</head>
+<body>
+
+
+<section id="ddfss" class="dd_fullscreenslider" style="visibility: visible;">
+
+<!-- Keep all your ARTICLE elements inside the "slidewrapper" DIV -->
+<div class="slidewrapper" style="transition: none; transform: translate3d(0px, 0px, 0px);">
+
+<article class="slide" data-title="Introduction">
+<h2>DD Full Screen Slider</h2>
+<p id="intro" class="scrollable">This full screen Slider creates slides that cover the entire page, allowing you to present content in an interactive, digestible format to viewers. Desktop and mobile friendly, the slides can be navigated in a plethora of ways- auto generated navigational buttons, keyboard, mousewheel, and drag/swipe on the desktop and on mobile. Each slide adds an unique hash (#) to the window URL to make them navigable and sharable with distinct URLs. Unique amongst its features is the ability to enable "scrollable" DIVs inside a slide that do not partake in the scrolling of the slide itself when swiped, so the content in question can be scrolled instead. Full Screen Slider harnesses CSS3 for its animations, falling back to jQuery for older browsers.</p>
+</article>
+
+<article class="slide" data-title="All about mushrooms">
+<h2>All About Mushrooms</h2>
+<p>"Mushroom" describes a variety of gilled fungi, with or without stems, and the term is used even more generally, to describe both the fleshy fruiting bodies of some Ascomycota and the woody or leathery fruiting bodies of some Basidiomycota.</p>
+<img src="./ddfullscreenslider_files/mushroom.jpg">
+</article>
+
+<article class="slide" data-title="Coconuts Galore!">
+<h2>Coconuts!</h2>
+<img src="./ddfullscreenslider_files/coconut.jpg">
+
+<div id="coconutsbody" style="background:#7BBF28; height: 300px" class="scrollable">
+
+<h3>A scrollable DIV!</h3>
+<p>Coconuts are different from any other fruits because they contain a large quantity of "water" and when immature they are known as tender-nuts or jelly-nuts and may be harvested for drinking. The coconut is known for its great versatility as seen in the many uses of its different parts and found throughout the tropics and subtropics. Coconuts are part of the daily diets of many people. Coconuts are different from any other fruits because they contain a large quantity of "water" and when immature they are known as tender-nuts or jelly-nuts and may be harvested for drinking. When mature, they still contain some water and can be used as seednuts or processed to give oil from the kernel, charcoal from the hard shell and coir from the fibrous husk. </p>
+
+<p>Coconuts are different from any other fruits because they contain a large quantity of "water" and when immature they are known as tender-nuts or jelly-nuts and may be harvested for drinking. The coconut is known for its great versatility as seen in the many uses of its different parts and found throughout the tropics and subtropics. Coconuts are part of the daily diets of many people. Coconuts are different from any other fruits because they contain a large quantity of "water" and when immature they are known as tender-nuts or jelly-nuts and may be harvested for drinking. When mature, they still contain some water and can be used as seednuts or processed to give oil from the kernel, charcoal from the hard shell and coir from the fibrous husk. </p>
+
+</div>
+
+</article>
+
+<article class="slide" data-title="Amsterdam, Netherlands">
+<h2>Amsterdam City</h2>
+<p>Amsterdam is the capital city and most populous city of the Kingdom of the Netherlands. Its status as the Dutch capital is mandated by the Constitution of the Netherlands though it is not the seat of the Dutch government, which is The Hague. Amsterdam has a population of 825,080 within the city proper, 1,317,663 in the urban area and 1,590,520 in the metropolitan area.</p>
+<img src="./ddfullscreenslider_files/amster1.jpg">
+</article>
+
+</div>
+
+<ul class="fssnav"><li class="selected"><a href="http://www.dynamicdrive.com/dynamicindex17/ddfullscreenslider.htm#slide1" title="Introduction">1</a></li><li><a href="http://www.dynamicdrive.com/dynamicindex17/ddfullscreenslider.htm#slide2" title="All about mushrooms">2</a></li><li><a href="http://www.dynamicdrive.com/dynamicindex17/ddfullscreenslider.htm#slide3" title="Coconuts Galore!">3</a></li><li><a href="http://www.dynamicdrive.com/dynamicindex17/ddfullscreenslider.htm#slide4" title="Amsterdam, Netherlands">4</a></li></ul></section>
+
+
+
+</body></html>
