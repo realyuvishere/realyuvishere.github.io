@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <script>
+        function hidecon() {
+            var show = document.getElementById('contact');
+            var menu = document.getElementById('menui');
+            var hide = document.getElementById('contact');
+            if (hide.style.display === 'none'){
+                hide.style.display = 'block';
+                show.style.display = 'block';
+                menu.style.color = '#000';
+            } else {
+                hide.style.display = 'none';
+                show.style.display = 'none';
+                menu.style.color = '#fff';
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="sd_pro.css">
+    <link rel="stylesheet" href="sd_100284.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+    </head>
+    <body>
+    <div class="wholebody" id="mainBod">
+        <div class="navbar" id="nav">
+            <nav class="mainNav" id="navigation">
+            <li class="links close" onclick="getElementById('nav').style.display = 'none'">Close &times;</li><br><br>
+            <a href="index.html"><li class="links closeh" onclick="getElementById('nav').style.display = 'none'"><i class="fa fa-home" aria-hidden="true"></i> Home</li></a><br><br>
+            <li class="links" onclick="hidecon()" id="contactus"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</li><br><br>
+            <li class="links extend current pr" onclick="window.alert('You are already on that page!')"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Products</li>
+            </nav>
+            </div>
+        <span class="menuicon" onclick="document.getElementById('nav').style.display = 'block'" id="menui"><i class="fa fa-navicon" aria-hidden="true"></i></span>
+        <div class="mainBod contacts" id="contact">
+            <div class="head">Call Us <i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="content">&rang; +91-<br>&rang; +91-</div><br>
+            <div class="head">E-mail <i class="fa fa-envelope-o" aria-hidden="true"></i></div><div class="content">&rang;</div><br>
+            <div class="head">Address</div><div class="content">&rang;</div>
+            </div>
+        <footer class="foot" id="pagefooter">
+            Website designed by <a href="http://codetweb.com" target="_blank" class="designerlink">Code The Web <i class="fa fa-copyright" aria-hidden="true"></i></a>
+        </footer>
+        </div>
+    </body>
+</html>

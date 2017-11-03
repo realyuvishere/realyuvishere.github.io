@@ -1,0 +1,51 @@
+@media screen and (max-width: 1366px) {
+	.members {
+		padding-left: 70px !important;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.members {
+		padding-left: 40px !important
+	}
+}
+@media screen and (max-width: 1024px) {
+	.members {
+		padding-left: 60px !important;
+	}
+}
+@media screen and (max-width: 768px) {
+	.members {
+		padding-left: 60px !important
+	}
+}
+@media screen and (max-width: 480px) {
+	html {
+		font-size: 8px !important;
+	}
+    .shift {
+        display: none !important;
+    }
+	.members {
+		padding-left: 20px !important
+	}
+	.fcard {
+		width: 260px !important
+	}
+}
+@media screen and (max-width: 375px) {
+	.members {
+		padding-left: 50px !important;
+	}
+}
+@media screen and (max-width: 320px) {
+	.members {
+		padding-left: 20px !important;
+	}
+	.underline {
+		width: 50% !important;
+		animation: 2s expand2 ease-out !important;
+	    -webkit-animation: 2s expand2 ease-out !important;
+	}
+	@keyframes expand2{from{width: 0%}to{width: 50%}}
+	@-webkit-keyframes expand2{from{width: 0%}to{width: 50%}}
+}

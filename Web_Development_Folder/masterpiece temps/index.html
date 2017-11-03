@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Media/cool-icon%201.ico">
+    <title>The Unveiled Divination | Home</title>
+    <script>
+    function stopaud(){
+        var aud = document.getElementById('audio');
+        if (aud.playing){
+            aud.pause();
+        } else {
+            aud.pause()
+        }
+    }
+    </script>
+    <script>
+    function playaud(){
+        var aud = document.getElementById('audio');
+        if (aud.paused){
+            aud.play();
+        } else {
+            aud.play();
+            aud.currentTime = 0;
+        }
+    }
+    </script>
+    <script>
+    function hidintro(){
+        var hide = document.getElementById('intro');
+        var show = document.getElementById('body');
+        var bg = document.getElementById('bg');
+        hide.style.display = "none";
+        show.style.display = "block";
+        bg.style.background = "none"
+    }
+    </script>
+    <script src="jquery-1.12.2.min.js" type="text/javascript"></script>
+    <script>
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 420){  
+    $('.mainhead').addClass("mainheadscrolled");
+  }
+  else{
+    $('.mainhead').removeClass("mainheadscrolled");
+  }
+});
+    </script>
+    <script>
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 60){  
+    $('#conhead1').addClass("headscrolled");
+  }
+  else{
+    $('#conhead1').removeClass("headscrolled");
+  }
+});
+    </script>
+    <script>
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 1490){  
+    $('#conhead2').addClass("headscrolled");
+  }
+  else{
+    $('#conhead2').removeClass("headscrolled");
+  }
+});
+    </script>
+    <script>
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 2970){  
+    $('#conhead3').addClass("headscrolled");
+  }
+  else{
+    $('#conhead3').removeClass("headscrolled");
+  }
+});
+    </script>
+    </head>
+    <body id="bg" class="page1">
+        <audio autoplay loop id="audio">
+        <source src="Media/Animals%20As%20Leaders%20-%20(Track%20Eleven%20-%20Modern%20Meat).mp3" type="audio/mpeg">
+        </audio>
+        <div class="intro" id="intro">
+            <div class="darkcover">
+    <div class="introhead">
+        <h2>Welcome to The Unveiled Divination</h2>
+        <div class="subs"><h4>Unveil towards the elightenment</h4></div>
+        </div>
+            <button class="introbtn" onclick="hidintro()">Proceed to the website!</button>
+            </div>
+        </div>
+        <div class="mainbod" id="body">
+        <header class="mainhead">The Unveiled Divination</header>
+        <div class="banner bg1"></div>
+        <div class="outter" id="introabo1">
+            <div class="inner">
+                <div class="content introp">Ever felt that the reality isn't real? Or maybe, just thought that the life is something really fake? Well, such instinct might be right as we unveil about Simulated Reality. Aren't you excited already?
+                    <br><br>
+            <div class="vidlinks space">
+                <button class="introbtn btn pro" onclick="getElementById('introabo1').style.display = 'none'">Click here if you are excited!</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <div class="maincontain">
+            <div class="containbod">
+            <div class="content">
+                <h3 class="conhead" id="conhead1">What really is simulated reality?</h3>
+                <div class="content p1">
+                    Simulated reality is the hypothesis that reality could be simulated (for example by computer simulation) to a degree indistinguishable from "true" reality. It could contain conscious minds which may or may not be fully aware that they are living inside a simulation. Which, in simple words, means that simulated reality is a theory which states that the reality in which we are in currently, is in fact simulated.<br><br>
+                    Even though, simulated reality is quite different from the concept of virtual reality. Virtual reality is easily distinguished from the experience of actuality; participants are never in doubt about the nature of what they experience. Simulated reality, by contrast, would be hard or impossible to separate from "true" reality.
+                    <br><br>
+                    Click on the names below and check out some of the videos that are feature the speakers which might help you to understand Simulated reality in a much better way. <br><br>
+                    </div>
+                <div class="vidlinks">
+                    <button class="introbtn btn" onclick="getElementById('vid1').style.display = 'block';stopaud()">Elon Musk</button> <button class="introbtn btn" onclick="getElementById('vid2').style.display = 'block';stopaud()">George Smoot</button>
+            </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="outter" id="vid1">
+            <div class="inner">
+                <div class="innerhead"><h2>Elon Musk's Speech<span class="closebtn" onclick="getElementById('vid1').style.display = 'none';playaud()">&times;</span></h2></div>
+                <div class="innerbod">
+                <div class="videocontain">
+                <video controls class="vid">
+                <source src="Media/Is%20life%20a%20video%20game-%20-%20Elon%20Musk%20-%20Code%20Conference%202016.mp4" type="video/mp4">
+                </video>
+            </div>
+                <div class="innercontent content">As you can see, Elon Musk really does give us a hint that maybe we might be a simulation, and really makes us think about it in our bathtubs.</div>
+                </div>
+                </div>
+            </div>
+            <div class="outter" id="vid2">
+            <div class="inner">
+                <div class="innerhead"><h2>George Smoot's Ted Talk<span class="closebtn" onclick="getElementById('vid2').style.display = 'none';playaud()">&times;</span></h2></div>
+                <div class="innerbod">
+                <div class="videocontain">
+                    <video controls class="vid">
+                    <source src="Media/You%20are%20a%20Simulation%20&%20Physics%20Can%20Prove%20It-%20George%20Smoot%20at%20TEDxSalford.mp4">
+                    </video>
+                    </div>
+                    <div class="innercontent content">This video will surely keep you thinking about you, your existence and of course your brain.</div>
+                </div>
+                </div>
+            </div>
+            </div>
+        <div class="emptybanner"></div>
+        <div class="maincontain">
+            <div class="containbod">
+                <div class="content">
+                <h3 class="conhead" id="conhead2">Is dreaming also a type of simulation?</h3>
+                <div class="content p1 p2">
+                    A dream could be considered a type of simulation capable of fooling someone who is asleep. As a result, the "dream hypothesis" cannot be ruled out, although it has been argued that common sense and considerations of simplicity rule against it. Which, in simple words, means that our dreams can be considered a type of simulation, which have a potential to fool who someone is asleep. One of the first philosophers to question the distinction between reality and dreams was Zhuangzi, a Chinese philosopher from the 4th century BC. He phrased the problem as the well-known "Butterfly Dream," which went as follows:<br><br>
+                    <i class="italic">Once Zhuangzi dreamt he was a butterfly, a butterfly flitting and fluttering around, happy with himself and doing as he pleased. He didn't know he was Zhuangzi. Suddenly he woke up and there he was, solid and unmistakable Zhuangzi. But he didn't know if he was Zhuangzi who had dreamt he was a butterfly, or a butterfly dreaming he was Zhuangzi. Between Zhuangzi and a butterfly there must be some distinction! This is called the Transformation of Things. (2, tr. Burton Watson 1968:49)</i><br><br>
+                    The philosophical underpinnings of this argument are also brought up by Descartes, who was one of the first Western philosophers to do so. In Meditations on First Philosophy, he states "... there are no certain indications by which we may clearly distinguish wakefulness from sleep", and goes on to conclude that "It is possible that I am dreaming right now and that all of my perceptions are false".
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="emptybanner"></div>
+        <div class="maincontain">
+            <div class="containbod">
+            <div class="content">
+                <h3 class="conhead" id="conhead3">History of the arguments on simulated reality.</h3>
+                <div class="content p1">
+                The simulation hypothesis was first published by Hans Moravec. Later, the philosopher Nick Bostrom developed an expanded argument examining the probability of our reality being a simulacrum. His argument states that at least one of the following statements is very likely to be true:<br>
+                <ol class="list1">
+                    <li>Human civilization is unlikely to reach a level of technological maturity capable of producing simulated realities, or such simulations are physically impossible to construct.</li><br>
+                    <li>A comparable civilization reaching aforementioned technological status will likely not produce a significant number of simulated realities (one that might push the probable existence of digital entities beyond the probable number of "real" entities in a Universe) for any of a number of reasons, such as, diversion of computational processing power for other tasks, ethical considerations of holding entities captive in simulated realities, etc.</li><br>
+                    <li>Any entities with our general set of experiences are almost certainly living in a simulation.</li>
+                    </ol><br>
+                    Epistemologically, it is not impossible to tell whether we are living in a simulation. For example, Bostrom suggests that a window could pop up saying: "You are living in a simulation. Click here for more information." However, imperfections in a simulated environment might be difficult for the native inhabitants to identify, and for purposes of authenticity, even the simulated memory of a blatant revelation might be purged programmatically. Nonetheless, should any evidence come to light, either for or against the skeptical hypothesis, it would radically alter the aforementioned probability.
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

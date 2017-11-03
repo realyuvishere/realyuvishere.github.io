@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+}
+.head {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.04);
+    margin-bottom: 12%
+}
+.links {
+    margin-left: 16px;
+    cursor: pointer;
+    border: 0;
+    padding-bottom: 18px;
+    transition: 300ms ease;
+    transition-property: border, color
+}
+.links:hover {
+    border-bottom: 2px solid #000
+}
+.icons {
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    padding: 6px;
+    color: #616967
+}
+.icons:hover {
+    border: 0;
+    color: #000
+}
+.login {
+    float: right
+}
+.notifs {
+    font-size: 12px;
+    background-color: #616967;
+    color: #fff;
+    padding: 5px 6px;
+    border-radius: 100%
+}
+.notifs:hover {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+.ured:hover {
+    border-bottom-color: #ea4335;
+    color: #ea4335
+}
+.ublue:hover {
+    border-bottom-color: #4285f4;
+    color: #4285f4
+}
+.ugreen:hover {
+    color: #4caf50;
+    border-bottom-color: #4caf50
+}
+.menu {
+    padding-top: 6px
+}
+.signin .animate {
+    display: inline-block;
+    position: relative
+}
+.signin {
+    background-color: #4285f4;
+    color: #fff;
+    font-family: Roboto;
+    transition: 600ms ease-out;
+    transition-property: background-color
+}
+.animate {
+    width: 88px
+}
+.signin .animate:after {
+    content: 'Sign In';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 600ms ease-out
+}
+.signin:hover .animate {
+    padding-right: 75px;
+    color: #fff
+}
+.signin:hover .animate:after {
+    opacity: 1;
+    right: 0
+}
+input {
+    outline: none
+}
+.searcharea {
+    text-align: center;
+}
+.search {
+    padding: 10px;
+    width: 25%;
+    border: 1px solid #aaa;
+    transition: 400ms ease-out;
+    transition-property: border-color, width;
+    animation: .9s zoom;
+    -webkit-animation: .9s zoom;
+    -moz-animation: .9s zoom;
+    -o-animation: .9s zoom;
+    font-family: Arial, sans-serif
+}
+.search:hover {
+    border-color: #616967
+}
+.search:focus {
+    border-color: #4285f4;
+    width: 50%
+}
+.doodle {
+    width: 272px;
+    height: 92px;
+    float: left
+}
+.fromright {
+    margin-left: 20px;
+    animation: .9s zoom;
+    -webkit-animation: .9s zoom;
+    -moz-animation: .9s zoom;
+    -o-animation: .9s zoom;
+    margin-right: 21.9%
+}
+.searchbtn {
+    background-color: rgba(0,0,0,0.07);
+    border: 1.5px solid rgba(0,0,0,0.1);
+    outline: none;
+    padding: 8px 10px;
+    color: #616967;
+    font-size: 16px;
+    transition: .3s ease-out;
+    transition-property: background-color, color;
+    font-family: Montserrat, sans-serif, verdana;
+    position: relative
+}
+.searchbtn:hover {
+    background-color: #4285f4;
+    color: #fff
+}
+.fromleft {
+    animation: .9s zoom;
+    -webkit-animation: .9s zoom;
+    -moz-animation: .9s zoom;
+    -o-animation: .9s zoom;
+}
+.pgfoot {
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px;
+    position: absolute;
+    margin-top: 15%
+}
+.ftlinks {
+    font-size: 14px;
+    font-family: Open Sans;
+    padding: 0px 5px
+}
+.ftlinks:hover {
+    border: 0;
+    text-decoration: underline;
+}
+.wgreen:hover {
+    background-color: #34a853
+}
+.footr {
+    float: right
+}
+.outter {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.2)
+}
+.inner {
+    font-size: 30px;
+    font-family: Roboto, sans-serif, Verdana;
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    width: 40%;
+    outline: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: downAni;
+    -webkit-animation-duration: 0.4s;
+    animation-name: downAni;
+    animation-duration: 0.4s;
+}
+.closebtn {
+    float: right;
+    cursor: pointer;
+    padding-right: 6px
+}
+.mheads {
+    text-align: center;
+    padding: 10px 14px;
+    font-family: Open Sans, sans-serif, verdana
+}
+.settmbod {
+    padding: 10px;
+    font-size: 20px !important;
+    font-family: sans-serif, verdana, arial
+}
+.settmul {
+    list-style-type: none;
+}
+ul {
+    padding: 0px 20px;
+    margin: 10px
+}
+.gapps {
+    height: 64px;
+    width: 64px
+}
+.gappmbod {
+    padding: 30px;
+    text-align: center
+}
+.appnames {
+    font-size: 16px;
+    position: relative
+}
+.gicons {
+    padding: 10px;
+    border: 1px solid #fff;
+    cursor: pointer
+}
+.gicons:hover {
+    border-color: #ccc
+}
+.gappmfoot {
+    background-color: rgba(0,0,0,0.1);
+    font-size: 20px;
+    cursor: pointer
+}
+.trends {
+    float: right
+}
+.thead {
+    background-color: rgba(0,0,0,0.08);
+    padding: 12px;
+    border: 2px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: .3s ease-out;
+    transition-property: background-color, color;
+    font-family: Roboto, sans-serif
+}
+.thead:hover {
+    background-color: #008080;
+    color: #fff
+}
+.mainbod {
+    padding: 10px
+}
+.tbod {
+    font-family: Open Sans;
+    border: 2px solid rgba(0,0,0,0.1);
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: none;
+    animation: .9s zoom;
+    -webkit-animation: .9s zoom;
+    -moz-animation: .9s zoom;
+    -o-animation: .9s zoom;
+}
+
+@keyframes zoom{from{opacity: 0;transform: scale(0)}to{opacity: 1;transform: scale(1)}}
+@-webkit-keyframes zoom{from{opacity: 0;transform: scale(0)}to{opacity: 1;transform: scale(1)}}
+@-moz-keyframes zoom{from{opacity: 0;transform: scale(0)}to{opacity: 1;transform: scale(1)}}
+@-o-keyframes zoom{from{opacity: 0;transform: scale(0)}to{opacity: 1;transform: scale(1)}}
+
+@keyframes downAni{from{opacity: 0;bottom: -300px}to{opacity: 1;bottom: 0px}}
+@-webkit-keyframes downAni{from{opacity: 0;bottom: -300px}to{opacity: 1;bottom: 0px}}
+@-moz-keyframes downAni{from{opacity: 0;bottom: -300px}to{opacity: 1;bottom: 0px}}
+@-o-keyframes downAni{from{opacity: 0;bottom: -300px}to{opacity: 1;bottom: 0px}}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto/Roboto-Regular.ttf)
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: Open Sans;
+    src: url(Open_Sans/OpenSans-Regular.ttf)
+}

@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <title>Converter Testing</title>
+        <script>
+    function inrConverter(){
+        document.usd.value = document.inr.value * 0.015
+        document.thb.value = document.inr.value * 0.53
+        document.eur.value = document.inr.value * 0.013
+        document.cny.value = document.inr.value * 0.098
+        document.aud.value = document.inr.value * 0.020
+        document.aed.value = document.inr.value * 0.055
+        document.pkr.value = document.inr.value * 1.57
+        document.mmk.value = document.inr.value * 17.80
+        document.khr.value = document.inr.value * 61.09
+        document.try.value = document.inr.value * 0.043
+        document.gbp.value = document.inr.value * 0.010
+    }
+    </script>
+    </head>
+<body>
+                <input type="text" placeholder="Amount of INR" class="inputs" name="inr" onchange="inrConverter()">
+                <br><br>To<button class="convert" name="convertBtn">Convert</button><br><br>
+                <input type="text" class="inputs" name="usd" placeholder="USD"> USD(USA dollar)<br><br>
+                <input type="text" class="inputs" name="thb" placeholder="THB"> THB(Thai Bhat)<br><br>
+                <input type="text" class="inputs" name="eur" placeholder="EUR"> EUR(Euro)<br><br>
+                <input type="text" class="inputs" name="cny" placeholder="CNY"> CNY(Chinese Yuan)<br><br>
+                <input type="text" class="inputs" name="aud" placeholder="AUD"> AUD(Australia Dollar)<br><br>
+                <input type="text" class="inputs" name="aed" placeholder="AED"> AED(UAE Dirham)<br><br>
+                <input type="text" class="inputs" name="pkr" placeholder="PKR"> PKR(Pakistani Rupee)<br><br>
+                <input type="text" class="inputs" name="mmk" placeholder="MMK"> MMK(Myanmar Kyat)<br><br>
+                <input type="text" class="inputs" name="khr" placeholder="KHR"> KHR(Cambodian Riel)<br><br>
+                <input type="text" class="inputs" name="try" placeholder="TRY"> TRY(Turkish Lira)<br><br>
+                <input type="text" class="inputs" name="gbp" placeholder="GBP"> GBP(British Pounds)<br><br>
+    </body>
+</html>

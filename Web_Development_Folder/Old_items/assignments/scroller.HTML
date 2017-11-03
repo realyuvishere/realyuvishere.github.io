@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    height: 7500px;
+    width: 5000px;
+}
+
+button {
+    position: fixed;
+}
+.auto-style1 {
+	margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+<p>Click one of the buttons (multiple times) to scroll the document window.</p>
+<p>Look at each scrollbar to see the effect.</p>
+
+<button onclick="scrollWin(0, 50)" style="left: 386px; top: 122px; width: 70px;">Scroll 
+up</button><br><br>
+
+<button onclick="scrollWin(0, -50)" style="left: 375px; top: 172px">Scroll down</button><br><br>
+
+<button onclick="scrollWin(100, 0)" style="left: 253px; top: 173px; width: 77px; height: 32px;">
+Scroll left</button><br><br>
+
+<button onclick="scrollWin(-100, 0)" style="left: 512px; top: 172px; height: 32px;" class="auto-style1">Scroll 
+right</button><br><br>
+
+<script>
+function scrollWin(x, y) {
+    window.scrollBy(x, y);
+}
+</script>
+
+</body>
+</html>

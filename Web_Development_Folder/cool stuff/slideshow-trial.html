@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Slideshow Trials</title>
+        <link rel="stylesheet" href="slideshow-style.css" />
+<script>
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("images");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+    </head>
+    <body>
+        <center>
+    <div class="slides">
+        <img src="fl1.jpg" class="images">
+        <img src="fl2.jpg" class="images">
+        <img src="fl3.jpg" class="images" style="display: block;">
+        <a class="slide left" onclick="plusDivs(-1)">&#10094;</a>
+        <a class="slide right" onclick="plusDivs(1)">&#10095;</a>
+        </div>
+            </center>
+        <div style="font-family: Microsoft yi baiti; font-size: 30px">WAZZUP BRUTHER</div>
+    </body>
+</html>
