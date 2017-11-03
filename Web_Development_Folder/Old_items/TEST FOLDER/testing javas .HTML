@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="demo1"></h1>
+<p id="demo2"></p>
+<script>
+function myFunction() {
+   document.getElementById("demo1").innerHTML = "testing my knowledge";
+   document.getElementById("demo2").innerHTML = "testing done, abort";
+}
+</script>
+<script>
+function theFunction() {
+/*
+The code below will change
+the heading with id = "demo1"
+and the paragraph with id = "demo2"
+in my web page:
+*/
+   document.getElementById("demo1").innerHTML = "changed heading";
+   document.getElementById("demo2").innerHTML = "changed paragraph";
+}
+</script>
+<script>
+function theFunctions() {
+/*
+The code below will change
+the heading with id = "demo1"
+and the paragraph with id = "demo2"
+in my web page:
+*/
+   document.getElementById("demo1").innerHTML = "";
+   document.getElementById("demo2").innerHTML = "";
+}
+</script>
+<button type="button" onclick="myFunction()"> click! </button> |
+<button type="button" onclick="theFunction()"> click2! </button> |
+<button type="button" onclick="theFunctions()"> click3! </button>
+</body>
+</html>

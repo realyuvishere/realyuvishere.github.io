@@ -1,0 +1,20 @@
+GOOD FONTS=
+FORTE
+EDWARDIAN SCRIPT ITC
+CALIBRI
+CAMBRIA
+FREESTYLE SCRIPT
+Chaparral Pro Light
+Harlow Solid Italic
+Kunstler Script
+Lucida Calligraphy
+Tekton Pro
+Verdana
+
+
+
+PASSCODES
+
+slipknotlive107
+slipknotlive666
+slipknotlive777

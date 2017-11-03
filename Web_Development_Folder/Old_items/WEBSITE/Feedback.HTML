@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<script>
+function valueCheck() {
+  var input , errorMessage;
+    input = document.getElementById("ageValue").value;
+    if (isNaN(x) || x < 15 || x > 100) {
+          errorMessage = "Inappropriate age";
+    }
+    document.getElementById("ageValueCheck").innerHTML = errorMessage;
+  }
+</script> 
+    <link rel="icon" type="image/png" href="GFSPL-LOGO.bmp">
+<meta name="keywords" content="Freight Forwarding, Logistics, Custom Clearance, Warehousing"> 
+<meta name="author" content="Pujan Sharma">
+<meta name="description" content="Feedback about the company">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1">
+<title>Feedback </title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="navigation" id="navBar">
+<ul class="navbar">
+<li class="navbar"><A HREF="index.HTML"> Home</A></li> |
+<li class="navbar"><A HREF="Contact Us.HTML"> Contact Us</A></li> |
+<li class="navbar"><A HREF="Login.HTML"> Login</A></li> |
+<li class="navbar"><A HREF="Feedback.HTML" id="activeLinkNav"> Feedback</A></li> |
+<li class="navbar"><A HREF="Membership.HTML"> Membership</A></li>
+</ul></div>
+    <center>
+<p id="intro" class="intro" name="intro" onsubmit="return valueCheck()"> 
+We would like to know your feedback for our services and company, cause we can always improve upon our services to provide more fine services.</p>
+    </center><br>
+<center>
+<form class="form" align="left" method="post" action="submit.asp" id="form">
+<h2 align="center" class="heading"> Feedback Form </h2>
+<hr class="ruleinForm" id="ruleinForm"><br>
+<div class="internalForm" id="inter">
+    <input type="text" name="nameCustomer" id="nam" class="inputsForm" placeholder="Name" required><br><br>
+<input type="text" name="age" class="inputsForm" id="ageValue" placeholder="Age" required><br><br>
+    <input type="text" name="email" class="inputsForm" id="mail" placeholder="Email" required><br><br>
+<input type="radio" name="gender" value="male" class="gender" id="gender" required>Male
+<br>
+<input type="radio" name="gender" value="female" class="gender" id="gender" required>Female
+<br>
+<input type="radio" name="gender" value="other" class="gender" id="gender" required>Other</div>
+<br><br>
+<textarea placeholder="Remarks" class="remarks" required></textarea><br>
+<input type="submit" name="submit" value="Submit" class="submitButton" onclick="valueCheck()">
+    <p id="ageValueCheck"></p>
+</form>
+</center>
+</body>
+</html>
+ 

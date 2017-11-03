@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body onload="f36_InitCurrency('CurrencyIP','CurrencySel',f36_CAry);" >
+Enter a value and select a currency to convert<br />
+<input  class="TxtArea" id="CurrencyIP" type="text" size="17" value="UK Pounds"  style="width:90px;" /><br />
+<select  class="TxtArea" id="CurrencySel" style="width:100px;" ></select>
+<br />
+<br />
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+// Convert Currency f36_Part1 (04-09-2005)
+// by Vic Phillips http://www.vicsjavascripts.org.uk
+
+// Convert a currency input to another currency
+// There may be as many applications on a page as required
+
+// Application Notes
+//
+// The page must contain the HTML Code for a textbox and SelectList for each application
+// e.g.
+//  <input id="CurrencyIP" type="text" size="10" value="UK Pounds"  /><br />
+//  <select id="CurrencySel" ></select>
+//
+// Each element must be assigned a unique ID
+//
+// There must also be a dimensioned array defining the currencys and conversion factors for conversion.
+// e.g.
+//  var f36_CAry=new Array();
+//  f36_CAry[0]=['Euros',1.45729];
+//  f36_CAry[1]=['U.S Dollars',1.87941];
+//  f36_CAry[2]=['Australian Dollars', 2.43897];
+//  f36_CAry[3]=['Thailand Baht',73.7369];
+//  f36_CAry[4]=['Russian Rubles',52.2623];
+//
+// Each application is initalised from a <BODY> onload event
+// e.g.
+// <body onload="f36_InitCurrency('CurrencyIP','CurrencySel',f36_CAry);" >
+// where:
+// parameter 0 = the ID name of the TextBox          (string)
+// parameter 1 = the ID name of the SelectList       (string)
+// parameter 2 = the array to be used for conversion (array variable)
+//
+// The SelectList is populated during initialisation with option 0
+// the base currency as defined by the initial value of the TextBox.
+// Susequent options are defined by the array to be used for conversion.
+//
+// All variable, function etc. names are prefixed with 'f36_' to minimise conflicts with other javascripts
+//
+// The functional Code f36_Part2 is best as an external JavaScript
+
+
+// Customising Variables
+
+var f36_CAry=new Array();
+f36_CAry[0]=['Euros',1.45729];
+f36_CAry[1]=['U.S Dollars',1.87941];
+f36_CAry[2]=['Australian Dollars', 2.43897];
+f36_CAry[3]=['Thailand Baht',73.7369];
+f36_CAry[4]=['Russian Rubles',52.2623];
+
+
+/*]]>*/
+</script>
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+// Convert Currency f36_Part2 (04-09-2005)
+// by Vic Phillips http://www.vicsjavascripts.org.uk
+
+
+// Functional Code = NO Need to Change
+
+function f36_InitCurrency(f36_ip,f36_sel,f36_ary){
+ f36_CIP=document.getElementById(f36_ip);
+ f36_Sel=document.getElementById(f36_sel);
+ f36_Sel.options.length=0;
+ f36_Sel.options[0]=new Option(f36_CIP.value,1,true,true);
+ for (f36_0=0;f36_0<f36_ary.length;f36_0++){
+  f36_Sel.options[f36_0+1]=new Option(f36_ary[f36_0][0],f36_ary[f36_0][1],true,true);
+ }
+ f36_Sel.selectedIndex=0;
+ f36_Sel.ip=f36_CIP;
+ f36_Sel.base=f36_CIP.value;
+ f36_Sel.onchange=function(){ f36_Calculate(this); }
+ f36_CIP.sel=f36_Sel;
+ f36_CIP.onfocus=function(){ f36_Focus(this); }
+ f36_CIP.onblur=function(){ this.v=this.value; }
+ f36_CIP.onkeyup=function(){ this.value=this.value.replace(/[^0123456789.]/g,''); }
+
+}
+
+function f36_Focus(obj){
+ obj.value='';
+ obj.sel.selectedIndex=0;
+}
+
+function f36_Calculate(f36_obj){
+ if (f36_obj.ip.value.length<1||f36_obj.ip.value==f36_obj.base){ return; }
+ f36_v=Math.ceil((Number(f36_obj.ip.v)*100*f36_obj.options[f36_obj.selectedIndex].value));
+ f36_obj.ip.value=(f36_v/100).toFixed(2);
+}
+
+/*]]>*/
+</script>
+
+
+</body>
+
+</html>
