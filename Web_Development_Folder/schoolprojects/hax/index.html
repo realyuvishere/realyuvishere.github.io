@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pine+ctrl</title>
+	<link rel="stylesheet" href="lib/index.css">
+	<link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="lib/ripple_effect.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<nav class="mainnav" id="nav">
+		<ul class="navul">
+			<a class="anchors intro"><img src="lib/logo.jpeg" class="logo"></a>
+			<a class="anchors home"><li class="navli">Home</li></a>
+			<a class="anchors sec1"><li class="navli">Operation</li></a>
+			<a class="anchors sec2"><li class="navli">Download</li></a>
+			<a class="anchors sec3"><li class="navli">Contribute</li></a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><li class="navli">&#9776;</li></a>
+			</ul>
+		</nav>
+		<div class="banner" id="ban1" style="text-align: center">
+			<span class="scrolldn" data-ripple-effect>&#10597;</span>
+		</div>
+		<div class="bod hom" data-ripple-effect>
+			<div class="exterior" id="modal1">
+			<div class="interior int1">
+				<header>Pine+ctrl <span class="closebtn" id="close1" onclick="aniclo()">&times;</span></header>
+				<div>Pine+ctrl is a centralised IoT control system. It can:
+				<ul>
+					<li>Store collated and combined status logs from multiple devices.</li>
+					<li>Act as a file upload/download system for centralised cloud file storage.</li>
+					<li>Act as a file fetching proxy.</li>
+					<li>Act as a gateway to the internet from an intranet.</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		<div class="leftcon">
+		<h3>What is Pine+ctrl?</h3>
+		<p class="subs">Pine+ctrl is a centralised IoT control system. It is another helping hand that you might need for your IoT device.</p>
+		<button class="button" id="btn1">Details</button>
+			</div>
+			<div class="rightcon first">
+			<img src="hex_1.png" style="width: 100%;height: 100%">
+			</div>
+		</div>
+		<div class="banner"></div>
+		<div class="bod sect1" id="sec1" data-ripple-effect>
+			<div class="exterior" id="modal2">
+			<div class="interior int2">
+				<header>More Operations <span class="closebtn" id="close2" onclick="aniclo2()">&times;</span></header>
+				<div>
+					<b style="font-family: Open Sans">Example:</b>
+					<ul>
+					<li><b>GET Request</b> <code>?m=check&v=info.txt</code></li><br>
+					<li><b>Possible outputs</b></li>
+						<ul>
+							<li><code>SUCCESS: ./raya/info.txt has been deleted!</code></li><br>
+							<li><code>ERROR: ./raya/info.txt cannot be found</code></li>
+						</ul>
+					<li><i>All files are stored in the ./raya/ directory. File uploads must be through multipart POST form data.</i></li>
+					</ul>
+					<b style="font-family: Open Sans">Misc. operations:</b>
+					<ul>
+						<li><b>Echo text</b> <code>m= <i>echo</i> v= <i>[text]</i></code></li><br>
+						<li><b>Echo IP Address</b> <code>m= <i>ip</i></code></li><br>
+					</ul><center>
+					<iframe src="https://www.youtube.com/embed/6bJzK392_eE" frameborder="0" style="width: 100%;height: 100%" allowfullscreen></iframe></center>
+				</div>
+				</div>
+			</div>
+		<div class="leftcon" style="padding-top: 7%">
+			<h3>Why use Pine+ctrl?</h3>
+			<p class="subs">Well, because
+			<ul class="why">
+			<li>It is a centralized IoT control system, all connected devices can share files, combined storage, basically it is a simple cloud system.</li>
+			<li>It allows debugging of large computing nodes networks such as renderfarms, all nodes store logs in the same place on the server so can be collectively viewed</li>
+			<li>It has a friendly UI for admins, it is lightweight and has easy integration with multiple systems.</li>
+			</ul></p>
+			</div>
+		<div class="rightcon" style="padding-top: 7%">
+			<h3>Operations</h3>
+			<div class="subs"><b style="font-family: Open Sans">Requests:</b><br><br>
+				<ul style="list-style-type: none; padding: 30px">
+					<li>Upload file <code>m= <i>upload</i>  v= <i>[file_name]</i></code></li><br>
+					<li>Check file <code>m= <i>check</i>  v= <i>[file_name]</i></code></li><br>
+					<li>Download file <code>m= <i>down</i>  v= <i>[file_name]</i></code></li><br>
+					<li>Delete file <code>m= <i>delete</i>  v= <i>[file_name]</i></code></li><br>
+					<li><button class="button" id="btn2">Know More!</button></li>
+				</ul>
+					</div>
+		</div>
+		</div>
+		<div class="banner altb"></div>
+		<div class="bod sect2" id="sec2" data-ripple-effect>
+			<div class="exterior" id="modal3">
+			<div class="interior int3">
+				<header>Setting up <span class="closebtn" id="close3" onclick="aniclo3()">&times;</span></header>
+				<div>
+				<b style="font-family: Open Sans">Authentication:</b>
+				<ul>
+				<li>Your requests must contain the following parameters:</li>
+					<ul style="padding: 20px">
+					<li><i>id=[device_id]</i></li><br>
+					<li><i>key=[auth_key]</i></li>
+					</ul>
+				</ul>
+					<b style="font-family: Open Sans">Example:</b>
+					<ul>
+						<li><code>index.php?id=<i>node_1</i>&key=<i>randompass1</i></code></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		<div class="leftcon" style="padding-top: 9%; text-align: center">
+			<h3>Download</h3>
+			<ul style="padding: 30px">
+			<li><a href="https://github.com/rahuldottech/pine-ctrl" target="_blank" style="font-size: 2rem">Direct Link</a></li>
+			</ul>
+			<br><br>
+			<a href="https://github.com/rahuldottech/pine-ctrl" target="_blank"><button class="button" id="download">Download Zip file</button></a>
+			</div>
+		<div class="rightcon" style="padding-top: 9%;">
+			<h3>Setting up</h3>
+			<div class="subs"><b style="font-family: Open Sans">Config:</b>
+			<ul>
+				<li>Edit values at the top of <i>index.php</i></li>
+				</ul>
+				<b style="font-family: Open Sans">Users:</b>
+				<ul>
+					<li>Edit the array in <i>auth.php</i> and add an id and key for each device or user which will be accessing Pine+ctrl.</li>
+				</ul>
+				<button class="button" id="btn3">Know more!</button>
+			</div>
+			</div>
+		</div>
+		<div class="banner altb2"></div>
+		<div class="bod sect3" id="sec3" data-ripple-effect>
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<h3>Contribute to this project and make it bigger!</h3>
+			<div class="subs">A small donation via code or money can help us get this project to greater heights.</div>
+			<h3><a href="https://github.com/rahuldottech/pine-ctrl" target="_blank">GitHub</a></h3>
+		</div>
+	<script src="lib/ripple_effect.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="lib/index.js"></script>
+	</body>
+</html>
