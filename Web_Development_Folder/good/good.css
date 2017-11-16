@@ -1,0 +1,55 @@
+/* first standardise these properties for all the buttons and inputs */
+
+button, input {
+	outline: none;
+	cursor: pointer;
+	border: 2px solid rgba(0,0,0,0.8);
+	padding: 12px 14px;
+	border-radius: 0px
+}
+
+/* button ke codes */
+
+.btn {
+	background-color: #fff;
+	font-family: sans-serif;
+	font-size: 20px;
+	transition: .3s ease-out;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.btn:focus {
+	box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.3)
+}
+.btn:hover {
+    color: #fff;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    background: #000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.3s ease-in;
+}
+.btn:hover:before {
+    top: 0;
+}
+
+/* input ke liye codes */
+
+.inp {
+	background-color: rgba(0,0,0,0);
+	transition: .4s ease-out;
+	color: #000;
+	border-color: inherit
+}
+.inp:focus {
+	box-shadow: 0px 0px 0px 2px rgba(76, 175, 80, 0.5);
+	border-color: #4caf50;
+	color: #4caf50
+}
