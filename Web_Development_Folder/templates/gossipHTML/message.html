@@ -1,0 +1,184 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Gossipmonger</title>
+<link rel="apple-touch-icon" sizes="180x180" href="res/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+<link rel="manifest" href="res/manifest.json">
+<link rel="mask-icon" href="res/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,
+                                 maximum-scale=1.0, user-scalable=no">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<meta http-equiv="cache-control" content="max-age=0">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+<meta http-equiv="pragma" content="no-cache">
+
+    <script>
+function limitText(limitField, limitNum) {
+    if (limitField.value.length > limitNum) {
+        limitField.value = limitField.value.substring(0, limitNum);
+    } 
+}
+</script>
+<link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets/socialwidgets.css"></head>
+
+<body id="body"><div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome, <b>Rahul</b>!<br>
+		
+		Parameter1: supergeekz
+		<br>
+		
+		Parameter2: rainbowcookie
+		<br>
+		
+		<a href="https://www.rahul.tech/gossipmonger/index.php?p1=supergeekz&amp;p2=rainbowcookie" target="_blank">Link</a>
+		
+		<br></p>
+		<p class="logout"><a id="exit" href="#" target="_blank"><button class="exitbtn">Exit Chat</button></a></p>
+        <div style="clear:both"></div>
+    </div>     
+    <div id="chatbox"><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<code>[TRANSCRIPT CLEARED]</code><br>
+</div>
+
+    <form name="message" action="index.php" class="messageform">
+        <input name="usermsg" type="text" id="usermsg" size="63" onkeydown="limitText(this,1000);" onkeyup="limitText(this,1000);" autocomplete="off">
+        <input name="submitmsg" type="submit" id="submitmsg" value="Send">
+    </form>
+    </div>
+<!--<p>type <code>!!clearmessages</code> to, well, clear the messages from the log.</p>-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript">
+// jQuery Document
+$(document).ready(function(){
+    //If user submits the form
+    $("#submitmsg").click(function(){
+$(chatbox).append(document.createTextNode('[#] '+$(usermsg).val()));
+$(chatbox).append('<br>');
+  var newscrollHeight = $(chatbox).attr('scrollHeight') - 20;
+  $(chatbox).animate({ scrollTop: newscrollHeight }, 'normal');
+        var clientmsg = $("#usermsg").val();
+        $.post("post.php", {text: clientmsg});
+        $("#usermsg").attr("value", "");
+        return false;
+    });
+
+    //Load the file containing the chat log
+    function loadLog(){        
+        var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
+        $.ajax({
+            url: "echolog.php",
+            cache: false,
+            success: function(html){        
+                $("#chatbox").html(html); //Insert chat log into the #chatbox div                
+                var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
+                if(newscrollHeight > oldscrollHeight){
+                    $("#chatbox").animate({ scrollTop: newscrollHeight }, 'normal'); //Autoscroll to bottom of div
+                }                
+              },
+        });
+    }
+    setInterval (loadLog, 1500);    //Reload file every 1.5 seconds
+    
+    //If user wants to end session
+    $("#exit").click(function(){
+        var exit = confirm("Are you sure you want to end the session?");
+        if(exit==true){window.location = 'index.php?logout=true';}        
+    });
+});
+
+
+  (function() {
+    var blinks = document.getElementsByTagName('blink');
+    var visibility = 'hidden';
+    window.setInterval(function() {
+      for (var i = blinks.length - 1; i >= 0; i--) {
+        blinks[i].style.visibility = visibility;
+      }
+      visibility = (visibility === 'visible') ? 'hidden' : 'visible';
+    }, 250);
+  })();
+</script>
+<script>
+	$("#usermsg").focus(function(){
+	if($(window).height() < 646)
+{
+	$("#wrapper").addClass("responsive");
+} else {
+	$("#wrapper").removeClass("responsive");
+}
+	});
+	</script>
+<script>
+	window.onclick = function(event) {
+		var cb = document.getElementById("chatbox");
+		var bod = document.getElementById("body");
+		var wr = document.getElementById("wrapper");
+    if (event.target == bod) {
+		$("#wrapper").removeClass("responsive");
+    } else if (event.target == cb) {
+		$("#wrapper").removeClass("responsive");
+	} else if (event.target == wr) {
+		$("#wrapper").removeClass("responsive");
+	}
+}
+	</script>
+</body></html>

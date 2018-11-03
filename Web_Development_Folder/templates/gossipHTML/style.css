@@ -1,0 +1,151 @@
+html {
+	font-size: 10px;
+	overflow: hidden
+}
+body {
+	font:1.5rem 'Product Sans';
+	color: #333;
+	text-align:center;
+	padding:35px; 
+	margin: 0px;
+	letter-spacing: 1px
+}
+ 
+form, p, span {
+	margin:0;
+	padding:0; }
+ 
+input { 
+	font: 1.3rem 'Quicksand';
+	outline: none;
+	transition: .3s ease-out;
+	border-radius: 4px;
+	border: 1px solid #000;
+	padding: 10px
+}
+input:focus {
+	box-shadow: 0px 0px 0px 2px rgba(30, 136, 229, 0.4);
+	border: 1px solid #1e88e5;
+	color: #1e88e5
+}
+ 
+a {
+	color:#154d69;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	transition: .4s ease-out
+}
+a:hover { text-decoration-style:solid; }
+#wrapper {
+	height: 90vh
+}
+#wrapper, #loginform {
+	margin:0 auto;
+	padding-bottom:25px;
+	background:#EBF4FB;
+	width:100%;
+	border:1px solid rgba(0,0,0,0.19);
+}
+ 
+#submitmsg, #enter, .exitbtn {
+	border: 1px solid #1e88e5;
+	padding: 10px 12px;
+	cursor: pointer;
+	background-color: #fff;
+	outline: none;
+	transition: .4s ease-out;
+	font-family: 'Helvetica Neue';
+	color: #1e88e5
+}
+#submitmsg:hover, #enter:hover, .exitbtn:hover {
+	border: 1px solid rgba(0,0,0,0.19);
+	color: #fff;
+	background-color: #1e88e5
+}
+#submitmsg:focus, #enter:focus, .exitbtn:focus {
+	box-shadow: 0px 0px 0px 2px rgba(30, 136, 229, 0.5);
+	border: 1px solid rgba(0,0,0,0.19);
+	color: #fff;
+	background-color: #1e88e5
+}
+#loginform { padding-top:18px; }
+#loginform p { margin: 5px; }
+ 
+#chatbox {
+	text-align:left;
+	margin:0 auto;
+	margin-bottom:25px;
+	padding:10px;
+	background:#fff;
+	height:60vh;
+	width:90%;
+	border:1px solid #aaa;
+    word-wrap: break-word;
+	overflow:auto; 
+	font-family: 'Quicksand', sans-serif, 'Helvetica Neue';
+	position: relative
+}
+#usermsg {
+	width:80%;
+	border:1px solid #333;
+}
+#usermsg:focus {
+	border: 1px solid #1e88e5
+}
+#submit { width: 60px; }
+ 
+.error { color: #d9534f; }
+ 
+#menu { padding:12.5px 25px 12.5px 25px; }
+ 
+.welcome { float:left; text-align:left;}
+ 
+.logout { float:right; }
+ 
+.msgln { margin:0 0 2px 0; }
+.exitbtn {
+	text-decoration: none;
+	border: 1px solid #d9534f;
+	color: #d9534f;
+	letter-spacing: 1px
+} 
+.exitbtn:hover, .exitbtn:focus {
+	background-color: #d9534f
+}
+.exitbtn:focus {
+	box-shadow: 0px 0px 0px 2px rgba(217, 83, 79,0.5)
+}
+.responsive {
+	position: relative;
+	bottom: 2em;
+	width: 86%;
+}
+
+@media screen and (max-height: 645px) {
+	#usermsg:focus {
+		position: fixed;
+		bottom: 2em;
+		right: 2em;
+		width: 86%
+	}
+}
+@media screen and (max-height: 580px) {
+	#usermsg {
+		width: 70%
+	}
+	body {
+		padding: 0px
+	}
+}
+@media screen and (max-width: 463px) {
+	 body{
+		 font-size: 1.2rem !important;
+		 padding: 20px
+	}
+	.menu {
+		padding: 10px
+	}
+	#usermsg {
+		width: 75%
+	}
+}

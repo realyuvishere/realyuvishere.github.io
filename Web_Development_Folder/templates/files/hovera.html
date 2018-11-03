@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500);
+
+/*------------------------------------*/
+/*------ General Styles for Pen ------*/
+/*------------------------------------*/
+
+* {font-family: "Work Sans", sans-serif;}
+
+.container{margin-top:5vh;}
+
+.col-lg-6{padding:0 5px;}
+
+.box-a, .box-b, .box-c, .box-d, .box-e {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box-a {height: 500px;}
+.box-b, .box-c, .box-d, .box-e {height:125px;}
+
+.box-a {background: #dddddd;}
+.box-b {background: #0392cf;}
+.box-c {background: #7bc043;}
+.box-d {background: #f37736;}
+.box-e {background: #ee4035;}
+
+.box-a a {line-height:500px;}
+.box-b a, .box-c a, .box-d a, .box-e a {line-height:125px;}
+
+@media (max-width: 991px) {
+  .col-md-12{padding:5px 0px;}
+  .box-a {height:125px !important;} 
+  .box-a a {line-height:125px;}
+}
+
+/*------------------------------------*/
+/*------ Basic Underline Styles ------*/
+/*------------------------------------*/
+
+.normal-underline,
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.normal-underline,
+.normal-underline:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+/*------------------------------------*/
+/*--- Individual Custom Underlines ---*/
+/*------------------------------------*/
+
+/*--- Blue Box (box-b) ---*/
+.box-b .custom-underline::after {
+  top: 65%;
+  height: 2px;
+  width: 90%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*--- Green Box (box-c) ---*/
+.box-c .custom-underline::after {
+  top: 65%;
+  height: 2px !important;
+  width: 40%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.4s ease-out all .1s;
+}
+
+.box-c:hover .custom-underline::after {
+  width: 90%;
+  left: 5%;
+    transition: 0.5s ease all;
+}
+
+/*--- Orange Box (box-d) ---*/
+.box-d .custom-underline::after {
+  top: 62.5%;
+  height: 2px;
+  width: 90%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s ease all .1s;
+}
+
+.box-d:hover .custom-underline::after {
+  top: 67.5%;
+    transition: 0.4s ease all;
+}
+
+/*--- Red Box (box-e) ---*/
+.box-e .custom-underline::after {
+  top: 65%;
+  height: 2px;
+  width: 0%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s ease all .3s;
+}
+
+.box-e:hover .custom-underline::after {
+  width: 90%;
+    transition: 0.3s ease all;
+}
+		</style>
+	</head>
+	<body>
+		<!-- Bootstrap CSS Linked in Settings -->
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12 col-lg-6">
+
+      <div class="box-a">
+        <a href="#" class="normal-underline">Boo, boring underline.</a>
+      </div>
+
+    </div>
+
+    <div class="col-md-12 col-lg-6">
+
+      <div class="box-b">
+        <a href="#" class="custom-underline">Hooray, custom underline.</a>
+      </div>
+
+      <div class="box-c">
+        <a href="#" class="custom-underline">Yay, underline hover effects.</a>
+      </div>
+
+      <div class="box-d">
+        <a href="#" class="custom-underline">Woohoo, more hover effects.</a>
+      </div>
+      
+      <div class="box-e">
+        <a href="#" class="custom-underline">This joke is getting old. Just hover.</a>
+      </div>
+
+    </div>
+    
+  </div>
+</div>
+
+<!-- jQuery Linked in Settings  -->
+
+<!-- Bootstrap js Linked in Settings -->
+
+	</body>
+</html>
