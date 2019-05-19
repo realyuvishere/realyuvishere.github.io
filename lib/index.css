@@ -103,8 +103,8 @@ h1, h2, h3 {
     width: 100%;
     z-index: 10;
     opacity: 0.1;
-    animation: 1s fromtop ease-out;
-    -webkit-animation: 1s fromtop ease-out;
+    animation: 2s nav ease-out;
+    -webkit-animation: 2s nav ease-out;
 }
 .none {
     display: none
@@ -120,16 +120,16 @@ h1, h2, h3 {
     display: block;
     text-decoration: none;
 }
-#navb li {
+#navb a {
 	transition: .4s ease-out;
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
 }
-#navb li:hover a {
+#navb a:hover {
     color: #000
 }
-#navb li:before {
+#navb a:before {
     content: "";
     position: absolute;
     background: #fff;
@@ -141,7 +141,7 @@ h1, h2, h3 {
 	transition: 0.2s ease-in;
     -webkit-transition: 0.2s ease-in;
 }
-#navb li:hover:before {
+#navb a:hover:before {
     top: 0;
 }
 #navb .icon {
@@ -187,6 +187,35 @@ h1, h2, h3 {
     animation-delay: .8s;
     background-color: #fd0702
 }
+.fromtop {
+    animation: 1s ease-out fromtop;
+    -webkit-animation: 1s ease-out fromtop;
+    transition: .4s ease-out
+}
+.frombottom {
+    animation: 1s ease-out frombottom;
+    -webkit-animation: 1s ease-out frombottom;
+    transition: .4s ease-out
+}
+.tobottom {
+    animation: 1s ease-out tobottom;
+    -webkit-animation: 1s ease-out tobottom;
+    transition: .4s ease-out
+}
+.totop {
+    animation: 1s ease-out totop;
+    -webkit-animation: 1s ease-out totop;
+    transition: .4s ease-out
+}
+.zoom {
+    animation: 1s ease-out zoom;
+    -webkit-animation: 1s ease-out zoom;
+    transition: .4s ease-out
+}
+.show {
+    display: block !important;
+    animation: none !important
+}
 
 @media screen and (max-width: 1000px) {
     .conlist li {
@@ -201,6 +230,9 @@ h1, h2, h3 {
     #navb a.icon {
         display: block;
     }
+    #navb ul, .conlist {
+        padding: 0
+    }
 }
 @media screen and (max-width: 600px) {
     #navb.responsive .icon {
@@ -214,6 +246,8 @@ h1, h2, h3 {
     }
 }
 
+@keyframes nav{0%{margin-top: -300px;opacity: 0}50%{margin-top: 0px;opacity: 1}100%{opacity: 0.1}}
+@-webkit-keyframes nav{0%{margin-top: -300px;opacity: 0}50%{margin-top: 0px;opacity: 1}100%{opacity: 0.1}}
 @keyframes spiral{0%{transform: rotate(0deg);height: 5rem;width:5rem;}50%{transform: rotate(460deg);height: 8rem;width:8rem;}100%{transform: rotate(720deg);height: 5rem;width:5rem;}}
 @-webkit-keyframes spiral{0%{transform: rotate(0deg);height: 5rem;width:5rem;}50%{transform: rotate(460deg);height: 8rem;width:8rem;}100%{transform: rotate(720deg);height: 5rem;width:5rem;}}
 @keyframes circles{0%{opacity: 0;transform: scale(0)}50%{transform:scale(1.3);opacity: 1}100%{opacity: 0;transform: scale(1)}}
