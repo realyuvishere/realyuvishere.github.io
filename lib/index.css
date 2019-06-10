@@ -14,7 +14,7 @@ h1, h2, h3 {
     letter-spacing: .8px;
     font-size: 1.2rem
 }
-.conlist, #navb ul {
+.conlist, #navb ul, .card ul {
     list-style-type: none;
 }
 #navb ul {
@@ -218,6 +218,9 @@ h1, h2, h3 {
     display: block !important;
     animation: none !important
 }
+.card {
+    background-color: rgba(0,0,0,0.4);
+}
 
 @media screen and (max-width: 1000px) {
     .conlist li {
@@ -225,6 +228,9 @@ h1, h2, h3 {
     }
     .loader {
         padding-top: 50%
+    }
+    .fullimg {
+        width: 100%
     }
 }
 @media screen and (max-width: 600px) {
@@ -245,6 +251,8 @@ h1, h2, h3 {
     #navb.responsive a {
         display: block;
         text-align: center;
+        animation: 1s fadein ease-out;
+        -webkit-animation: 1s fadein ease-out;
     }
 }
 
