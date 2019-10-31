@@ -16,7 +16,7 @@ var x = setInterval(function() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("timer").innerHTML = months + " Months<br>" + days + " Days<br>" + hours + " Hours<br>" + minutes + " Minutes<br>and<br>" + seconds + " Seconds<br>before boards get you!<br><sub class='text-muted'>so get it first, before it gets you.</sub>";
+    document.getElementById("timer").innerHTML = months + " Months<br>" + days + " Days<br>" + hours + " Hours<br>" + minutes + " Minutes<br>and<br>" + seconds + " Seconds<br>before boards get you!";
     $("#timer").css('background-color', 'rgba(0, 0, 0, .3)');
     setTimeout(function(){
         $("#timer").css('background-color', 'rgba(0, 0, 0, .2)');
@@ -33,8 +33,10 @@ $(".colours").on('input', function(){
     $(".date").css({"background-color": amount,});
     if (amount > "#555555") {
         $("#cchange").removeClass("text-white");
+        $(".text-muted").addClass("text-white").removeClass("text-muted");
     } else {
         $("#cchange").addClass("text-white");
+        $(".text-muted").removeClass("text-white").addClass("text-muted");
     }
 });
 
