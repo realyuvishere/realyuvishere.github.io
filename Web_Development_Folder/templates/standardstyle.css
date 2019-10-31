@@ -11,8 +11,9 @@ input, button, textarea, form {
     background-color: #fff;
     color: #000
 }
-a {
-    text-decoration: none
+a, a:visited {
+    text-decoration: none;
+    color: #006699
 }
 iframe {
     border: 0;

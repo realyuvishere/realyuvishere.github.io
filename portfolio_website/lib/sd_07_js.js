@@ -53,21 +53,3 @@ if ($(this).scrollTop() > 570){
 	$('.mainnavscr').removeClass("show");
   }
 });
-setTimeout(function () {
-	document.title = "Yuvraj Sharma";
-}, 1000);
-function snackbar() {
-	if($('html, body').offset("#works")) {
-		$("#snackbar1").addClass("reveal");
-	var s1 = document.getElementById('snackbar1');
-    setTimeout(function(){ s1.className = s1.className.replace("show", ""); }, 3000);
-	}else if($('html, body').offset("#about")) {
-		$("#snackbar2").addClass("reveal");
-	var s2 = document.getElementById('snackbar2');
-    setTimeout(function(){ s2.className = s2.className.replace("show", ""); }, 3000);
-	}else{
-		$("#snackbar3").addClass("reveal");
-	var s3 = document.getElementById('snackbar3');
-    setTimeout(function(){ s3.className = s3.className.replace("show", ""); }, 3000);
-	}
-}

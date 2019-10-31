@@ -1,0 +1,85 @@
+* {
+    transition: .5s ease-out;
+    font-family: 'Montserrat';
+    
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.date {
+    background-color: #222;
+    position: relative;
+    top: 0;
+    bottom: 0
+}
+
+#timer {
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.btn {
+    font-size: 2rem
+}
+
+.colours {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 1.5rem;
+    background: #fff;
+    outline: none;
+    border: 0;
+    margin: 1rem;
+    cursor: pointer !important
+}
+#cchange, .options {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    padding: 2rem
+}
+#cchange:hover {
+    background-color: rgba(0,0,0,0.2);
+    opacity: 0.8
+}
+#cchange:hover h2 {
+    color: #fff
+}
+.scrolled {
+    opacity: 0.3
+}
+#close {
+    float: right;
+    cursor: pointer;
+    padding: .1rem 0.5rem;
+    margin: 0
+}
+#close:hover, .options span:hover {
+    background-color: rgba(0,0,0,0.3)
+}
+.options {
+    display: none;
+    color: #fff;
+    padding: 0;
+    animation: 1s fadein ease-out;
+    -webkit-animation: 1s fadein ease-out;
+}
+.options span {
+    font-size: 3rem;
+    padding: 0 1rem;
+    margin: 0;
+    height: auto;
+    cursor: pointer;
+}
+.text-muted {
+    font-size: 1rem
+}
+
+@media screen and (max-width: 600px) {
+    #cchange {
+        opacity: 0.3
+    }
+}

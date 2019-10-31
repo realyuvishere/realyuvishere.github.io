@@ -1,0 +1,40 @@
+button, a, input {
+    outline: none !important;
+    cursor: pointer
+}
+.banner {
+    height: 6rem;
+    width: 100%;
+    position: relative
+}
+.navbar {
+    animation: .5s fromtop ease-out;
+    -webkit-animation: .5s fromtop ease-out;
+    transition: .4s ease-out;
+    background-color:#1f3b6b;
+    font-family: 'Comfortaa';
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0
+}
+.navbar li {
+    transition: .2s ease-out;
+}
+.navbar li:hover, .navbar li a.active {
+    background-color:#325FAD;
+    border-radius: 10px
+}
+.navbar li a {
+    height: 100%;
+    color: #fff;
+    padding: 1rem;
+}
+.navbar-toggler {
+    color: #fff;
+    border-color: rgba(255,255,255,0.6);
+}
+
+@media screen and (max-width: 915px) {
+    .nav {
+        text-align: center
+    }
+}

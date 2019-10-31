@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Yuvraj Sharma</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -15,19 +13,20 @@
         <link rel="stylesheet" href="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.css">
         <link rel="stylesheet" href="lib/index.css">
         <link rel="stylesheet" href="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/animate.css">
+        <link rel="icon" href="lib/logo.png">
     </head>
     <body>
-        <div class="loader" id="ldiv">
+        <div class="loader full" id="ldiv">
             <center><div class="square" id="sdiv"><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div></div></center>
         </div>
-        <div class="allmodals">
-            <div class="modal fade bd-example-modal-lg" id="fimg" tabindex="-1" role="dialog" aria-labelledby="pic1" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                    <center><img src="lib/yuvraj.JPG" class="fullimg img-fluid"></center>
+        <div class="mainbod none">
+            <div class="allmodals">
+                <div class="modal fade bd-example-modal-lg" id="fimg" tabindex="-1" role="dialog" aria-labelledby="pic1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/yuvraj.JPG" class="fullimg img-fluid"></center>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="mainbod">
             <div class="ncl none text-center" id="navb">
                 <ul class="nul d-flex justify-content-around">
                     <a id="ian" data-menuanchor="intro" class="nav-item nav-link" href="#intro">About</a>
@@ -36,8 +35,7 @@
                     <a href="javascript:void(0);" style="font-size:1rem;" class="icon" onclick="myFunction()">&#9776;</a>
                 </ul>
             </div>
-            <div id="fullpage">
-                <div class="section" data-anchor="intro">
+                <div class="full" id="intro">
                     <div class="row">
                         <div class="col-md-12 col-lg-1"></div>
                         <div class="col-md-12 col-lg-4">
@@ -57,7 +55,7 @@
                         <div class="banner"></div>
                     </div>
                 </div>
-                <div class="section" data-anchor="about">
+                <div class="full" id="about">
                     <div class="banner" style="height: 2rem"></div>
                     <h1 class="text-center">About me</h1>
                     <div class="banner" style="height: 2rem"></div>
@@ -101,7 +99,7 @@
                     </div>
                     <div class="banner"></div>
                 </div>
-                <div class="section" data-anchor="work">
+                <div class="full" id="work">
                     <div class="banner"></div>
                     <h1 class="text-center">My Works</h1>
                     <div class="banner"></div>
@@ -156,7 +154,7 @@
                     </div>
                     <div class="banner"></div>
                 </div>
-                <div class="section" data-anchor="con">
+                <div class="full" id="con">
                     <div class="banner"></div>
                     <h1 class="text-center">Contact Me</h1>
                     <div class="intex">Get in touch with me via these social media platforms</div>
@@ -173,8 +171,6 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.js"></script>

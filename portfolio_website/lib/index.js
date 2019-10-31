@@ -1,4 +1,6 @@
-var x = document.getElementById("navb");
+// old code
+
+/*var x = document.getElementById("navb");
 $(document).ready(function() {
 	$('#fullpage').fullpage({
         menu: '#navb',
@@ -59,7 +61,13 @@ $(document).ready(function() {
         },
 	});
 });
-var vHeight = $(window).height(), vWidth = $(window).width(), cover = $('.full'), halfvh = vHeight/2, thirdvh = vHeight/3, halfvw = vWidth/2.5;
+*/
+var vHeight = $(window).height(),
+    vWidth = $(window).width(),
+    cover = $('.full'),
+    halfvh = vHeight/2,
+    thirdvh = vHeight/3,
+    halfvw = vWidth/2.5;
 //$('.introheading').css({"padding-top": halfvh,});
 //$('#ldiv').css({"padding-top": halfvh,});
 //$('.lds-css').css({"padding-left": halfvw,});
@@ -128,3 +136,8 @@ function myFunction() {
         $(".nul").addClass("justify-content-around");
     }
 }
+// loader function
+window.onload = function(){
+    $('.loader').addClass("none");
+    $('.mainbod').removeClass("none")
+};
