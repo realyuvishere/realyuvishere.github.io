@@ -1,0 +1,9 @@
+* {
+    font-family: 'Montserrat'
+}
+form {
+    background-color: rgba(0,0,0,0.1) !important
+}
+label {
+    font-size: 1.3rem
+}

@@ -67,12 +67,14 @@ var vHeight = $(window).height(),
     cover = $('.full'),
     halfvh = vHeight/2,
     thirdvh = vHeight/3,
-    halfvw = vWidth/2.5;
+    halfvw = vWidth/2.5,
+    quartvh = vHeight/4;
 //$('.introheading').css({"padding-top": halfvh,});
 //$('#ldiv').css({"padding-top": halfvh,});
 //$('.lds-css').css({"padding-left": halfvw,});
 //$("#timer").css({"width": vWidth/2});
 cover.css({"min-height":vHeight,"max-width":vWidth,});
+$("#intro .row").css({"padding-top": quartvh/1.5,});
 $(document).ready(function(){
     if($(window).width() < 1000) {
         $("#timer").css({"width": "100%"});

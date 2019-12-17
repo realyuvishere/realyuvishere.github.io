@@ -48,8 +48,8 @@
                         </div>
                         <div class="col-md-12 col-lg-1"></div>
                         <div class="hmm col-md-12 col-lg-6 frombottom">
-                            <h1 class="text-center">My Portfolio</h1>
-                            <p class="intex">Hi! My name is Yuvraj Sharma. I am a senior high school student from India, who is into web development, music, photography and literature. I have been developing websites since 2015 and playing music since 2012, it wasn't until 2016 when I started producing music as well.</p>
+                            <h1 class="text-center">Hey there!</h1>
+                            <p class="intex">My name is Yuvraj Sharma. I am a senior high school student from India, who is into web development, music, photography and literature. I have been developing websites since 2015 and playing music since 2012, it wasn't until 2016 when I started producing music as well.</p>
                             <div class="text-center"><a class="btn btn-lg btn-outline-info" href="#about">Know more</a></div>
                         </div>
                         <div class="banner"></div>
