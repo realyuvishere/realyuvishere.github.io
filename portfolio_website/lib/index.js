@@ -69,6 +69,18 @@ var vHeight = $(window).height(),
     thirdvh = vHeight/3,
     halfvw = vWidth/2.5,
     quartvh = vHeight/4;
+window.onload = function(){
+    $('.loader').addClass("none");
+    $('.mainbod').removeClass("none")
+};
+setInterval(function(){
+    $("#ldiv").css('background-color', '#111');
+    $("#sdiv").css('background-color', '#fff');
+    setTimeout(function(){
+        $("#ldiv").css('background-color', '#f9f9f9');
+        $("#sdiv").css('background-color', '#000');
+    }, 2000)
+}, 4000);
 //$('.introheading').css({"padding-top": halfvh,});
 //$('#ldiv').css({"padding-top": halfvh,});
 //$('.lds-css').css({"padding-left": halfvw,});
@@ -100,14 +112,6 @@ $(document).ready(function(){
         $(".zoom").removeClass("show");
     }
 });
-setInterval(function(){
-    $("#ldiv").css('background-color', '#111');
-    $("#sdiv").css('background-color', '#fff');
-    setTimeout(function(){
-        $("#ldiv").css('background-color', '#f9f9f9');
-        $("#sdiv").css('background-color', '#000');
-    }, 2000)
-}, 4000);
 function myFunction() {
     var ian = document.getElementById("ian");
     var wan = document.getElementById("wan");
@@ -138,8 +142,3 @@ function myFunction() {
         $(".nul").addClass("justify-content-around");
     }
 }
-// loader function
-window.onload = function(){
-    $('.loader').addClass("none");
-    $('.mainbod').removeClass("none")
-};

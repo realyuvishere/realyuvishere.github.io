@@ -2,11 +2,13 @@ html {
     overflow-x: hidden
 }
 div, p, span {
-    color: #fff;
     font-family: 'Montserrat'
 }
 h1, h2, h3 {
     font-family: 'Comfortaa'
+}
+textarea {
+    resize: none
 }
 .mainbod {
     transition: .4s ease-out
@@ -76,7 +78,6 @@ h1, h2, h3 {
 }
 .text {
     white-space: nowrap; 
-    color: #fff;
     font-size: 16px;
     position: absolute;
     overflow: hidden;
@@ -129,7 +130,7 @@ h1, h2, h3 {
 }
 #navb a {
     padding: 1rem;
-    color: #fff;
+    
     transition: .4s ease-out;
     display: block;
     text-decoration: none;
@@ -178,7 +179,7 @@ h1, h2, h3 {
 }
 .loader .circle {
     border-radius: 100%;
-    background-color: #fff;
+    background-
     height: 1rem;
     width: 1rem;
     opacity: 0;
@@ -233,7 +234,26 @@ h1, h2, h3 {
 .card {
     background-color: rgba(0,0,0,0.4);
 }
+.progress {
+    height: 5px !important;
+    border-radius: 0 !important;
+    background-color: rgba(0,0,0,0)
+}
+.progress-bar {
+    background-color: #ca5762
+}
+.cs li {
+    padding: 1rem;
+    border-right: 2px solid rgba(255,255,255,0.5);
+    transition: .4s ease-out
+}
+.cs li:hover {
+    cursor: pointer;
+    border-right-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.5)
+}
 
+/* Media Queries */
 @media screen and (max-width: 1000px) {
     .conlist li {
         padding: 1rem

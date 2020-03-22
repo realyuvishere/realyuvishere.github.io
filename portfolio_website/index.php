@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/animate.css">
         <link rel="icon" href="lib/logo.png">
     </head>
-    <body>
+    <body class="text-white">
         <div class="loader full" id="ldiv">
             <center><div class="square" id="sdiv"><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div></div></center>
         </div>
@@ -27,11 +27,11 @@
                     </div>
                 </div>
             </div>
-            <div class="ncl none text-center" id="navb">
+            <div class="ncl text-center" id="navb">
                 <ul class="nul d-flex justify-content-around">
-                    <a id="ian" data-menuanchor="intro" class="nav-item nav-link" href="#intro">About</a>
-                    <a id="wan" data-menuanchor="work" class="nav-item nav-link" href="#work">Works</a>
-                    <a id="can" data-menuanchor="con" class="nav-item nav-link" href="#con">Hit me up</a>
+                    <a id="ian" class="nav-item nav-link" href="#intro">About</a>
+                    <a id="wan" class="nav-item nav-link" href="#work">Works</a>
+                    <a id="can" class="nav-item nav-link" href="#con">Hit me up</a>
                     <a href="javascript:void(0);" style="font-size:1rem;" class="icon" onclick="myFunction()">&#9776;</a>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
                         <div class="col-md-12 col-lg-4">
                             <div class="imgcontain fromtop">
                                 <img src="lib/yuvraj.JPG" class="intropic img-fluid">
-                                <div class="mypic" data-toggle="modal" data-target="#fimg" data-ripple-effect>
+                                <div class="mypic" data-toggle="modal" data-target="#fimg">
                                     <div class="text">Click to view the whole image.</div>
                                 </div>
                             </div>
@@ -60,42 +60,43 @@
                     <h1 class="text-center">About me</h1>
                     <div class="banner" style="height: 2rem"></div>
                     <div class="row">
-                        <div class="col-md-12 col-lg-1"></div>
-                        <div class="hmm1 col-md-12 col-lg-5 fromtop none">
-                            <h2 class="text-center">Computer skills</h2>
+                        <div class="col-md-12 col-lg-2"></div>
+                        <div class="col-md-12 col-lg-8 text-center">
+                            <h2 class="">Computer skills</h2>
                             <div class="intex">Some of the languages/libraries I am comfortable with</div>
                             <div class="row">
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>jQuery</li>
-                                        <li>Bootstrap</li>
-                                        <li>Kotlin</li>
-                                        <li>Python</li>
-                                        <li>PHP</li>
-                                        <li>SCSS</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <p style="padding-left: 1rem">And some that I am still trying to figure out</p>
-                                    <ul>
-                                        <li>ReactJS</li>
-                                        <li>AngularJS</li>
-                                        <li>NodeJS</li>
-                                        <li>C++</li>
-                                        <li>Arduino</li>
+                                <div class="col-12 text-left">
+                                    <ul class="cs" style="list-style-type:none;padding: 0">
+                                        <li>HTML</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>CSS</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>JavaScript</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>jQuery</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>Bootstrap</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>Kotlin</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>Python</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>PHP</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>SCSS</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>ReactJS</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>AngularJS</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>NodeJS</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 18%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>C++</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <li>Arduino</li><div class="progress"><div class="progress-bar " role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div></div>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="hmm2 col-md-12 col-lg-5 frombottom none">
+                        <div class="col-md-12 col-lg-2"></div>
+                    </div>
+                    <div class="banner"></div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-2"></div>
+                        <div class="col-md-12 col-lg-8">
                             <h2 class="text-center">Music skills</h2>
                             <div class="intex">I started off as a bass player and then gradually learnt most of other string instruments, i.e guitar and ukulele, along with percussions, like cajon, darbuka and drums.<br><br>
                                 Currently, I am more focused towards the technical side of music, that is music programming/production, using softwares like GarageBand by Apple and ProTools First by Avid.
                             </div>
                         </div>
+                        <div class="col-md-12 col-lg-2"></div>
                     </div>
                     <div class="banner"></div>
                 </div>
@@ -114,7 +115,6 @@
                                 <div class="card card-block">
                                     <p class="intex">Some of the designs which were developed by me.</p>
                                     <ul>
-                                        <li><a target="_blank" href="https://yuvrajsharma07.github.io/ordin">Ordin@trix</a></li>
                                         <li><a target="_blank" href="https://yuvrajsharma07.github.io/ordin">Ordin@trix</a></li>
                                         <li><a target="_blank" href="https://yuvrajsharma07.github.io/hackathon">PineX</a></li>
                                         <li><a target="_blank" href="https://yuvrajsharma07.github.io/sbv13.1">Google Pixel</a></li>
@@ -165,7 +165,30 @@
                         <li><a class="zoom btn sdc btn-outline-secondary btn-lg" target="_blank" href="https://soundcloud.com/yuvraj-sharma-251283993"><i class="fab fa-soundcloud"></i> yuvraj sharma</a></li>
                         <li><a class="zoom btn btn-outline-danger btn-lg" target="_blank" href="https://www.youtube.com/channel/UCvJnN7bsZNOgD1xZiStOU4g/"><i class="fab fa-youtube"></i> Yuvraj Sharma</a></li>
                     </ul>
-                    <div class="intex">Or shoot me a mail at <a href="mailto:billiondollarone07@gmail.com">billiondollarone07@gmail.com</a></div>
+                    <div class="intex">Or shoot me a mail at <a href="mailto:billiondollarone07@gmail.com">billiondollarone07@gmail.com</a><br><br>
+                        <p>Or text me here at for a quick chat</p>
+                        <div class="row">
+                            <div class="col-12 col-lg-3"></div>
+                            <div class="col-12 col-lg-6">
+                                <form action="" method="post" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input name="email" type="email" class="form-control" id="email" aria-describedby="email" placeholder="Your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" class="form-control" id="message" placeholder="Anything..."></textarea>
+                                    </div>
+                                    <button type="submit" class="d-flex btn btn-lg btn-outline-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="col-12 col-lg-3"></div>
+                        </div>
+                    </div>
                     <div class="banner"></div>
                 </div>
             </div>
