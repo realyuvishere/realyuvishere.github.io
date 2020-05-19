@@ -7,10 +7,20 @@ div, p, span {
 h1, h2, h3 {
     font-family: 'Comfortaa'
 }
+.cs {
+    font-family: 'Cutive Mono'
+}
+.btn, input, label {
+    font-family: 'Quicksand'
+}
 textarea {
     resize: none
 }
-.mainbod {
+label {
+    font-size: 1.1rem;
+    padding: 1rem
+}
+.mainbod, .full {
     transition: .4s ease-out
 }
 #intro {
@@ -36,15 +46,9 @@ textarea {
 #navb ul {
     margin: 0
 }
-.row .row ul {
-    font-family: 'Cutive Mono'
-}
-.btn {
-    font-family: 'Quicksand'
-}
 .intropic {
     border-radius: 100%;
-    border: 6px solid #fff;
+    border: 6px solid #c6ffc6;
     cursor: pointer;
     transition: .4s ease-out
 }
@@ -141,9 +145,6 @@ textarea {
 	position: relative;
 	z-index: 1;
 }
-#navb a:hover {
-    color: #000
-}
 #navb a:before {
     content: "";
     position: absolute;
@@ -179,7 +180,7 @@ textarea {
 }
 .loader .circle {
     border-radius: 100%;
-    background-
+    background-color: #fff;
     height: 1rem;
     width: 1rem;
     opacity: 0;
@@ -251,6 +252,49 @@ textarea {
     cursor: pointer;
     border-right-color: rgba(255,255,255,0.5);
     background-color: rgba(255,255,255,0.5)
+}
+#thanks h4 {
+    font-size: 3rem
+}
+form button[type=submit] {
+    border-color: #00c6d2 !important;
+    color: #00c6d2;
+}
+form button[type=submit]:hover {
+    background-color: #00c6d2;
+}
+form button[type=submit]:active {
+    background-color: #00c6d2 !important;
+    border-color: #00c6d2 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 198, 210, 0.5) !important;
+}
+form button[type=submit]:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 198, 210, 0.5);
+}
+.quo {
+    border-color: rgb(185, 43, 39) !important;
+    color: rgb(185, 43, 39);
+}
+.quo:hover {
+    border-color: rgb(185, 43, 39) !important;
+    background-color: rgb(185, 43, 39);
+}
+.quo:active {
+    border-color: rgb(185, 43, 39) !important;
+    background-color: rgb(185, 43, 39) !important;
+    box-shadow: 0 0 0 0.2rem rgba(185, 43, 39,0.5) !important;
+}
+.quo:focus {
+    box-shadow: 0 0 0 0.2rem rgba(185, 43, 39,0.5);
+}
+.form-control {
+    padding: .5rem .9rem
+}
+textarea.form-control {
+    height: 10rem
+}
+.conlist {
+    padding: 0
 }
 
 /* Media Queries */

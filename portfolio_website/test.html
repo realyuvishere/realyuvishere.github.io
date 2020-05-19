@@ -19,45 +19,10 @@
         <link rel="icon" href="lib/logo.png">
     </head>
     <body class="text-white">
-        
-        <div class="loader full" id="ldiv">
-            <center><div class="square" id="sdiv"><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div></div></center>
-        </div>
-        
-        <div class="mainbod none">
-            
-            <div class="allmodals">
-                <div class="modal fade bd-example-modal-lg" id="fimg" tabindex="-1" role="dialog" aria-labelledby="pic1" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/yuvraj.JPG" class="fullimg img-fluid"></center>
-                    </div>
-                </div>
-                <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-hidden="false">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <div class="modal-content bg-dark">
-                            <div class="modal-header">
-                                <h4 class="modal-title">You gotta ask yourself one question</h4>
-                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <div class="d-flex justify-content-around">
-                                        <button class="btn btn-outline-info" data-dismiss="modal">Continue with the dark mode</button>
-                                        <button class="btn btn-outline-info" onclick="lightmode()">Enable light mode</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+        <div class="mainbod">
             <div class="ncl text-center" id="navb">
                 <ul class="nul d-flex justify-content-around">
                     <a id="ian" class="nav-item nav-link" href="#intro">About</a>
-                    <a id="toggler" class="nav-item nav-link" onclick="modetoggle()">Light/Dark Mode</a>
                     <a id="wan" class="nav-item nav-link" href="#work">Works</a>
                     <a id="can" class="nav-item nav-link" href="#con">Hit me up</a>
                     <a href="javascript:void(0);" style="font-size:1rem;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -65,16 +30,6 @@
             </div>
                 <div class="full" id="intro">
                     <div class="row">
-                        <div class="col-md-12 col-lg-1"></div>
-                        <div class="col-md-12 col-lg-4">
-                            <div class="imgcontain fromtop">
-                                <img src="lib/yuvraj.JPG" class="intropic img-fluid">
-                                <div class="mypic" data-toggle="modal" data-target="#fimg">
-                                    <div class="text">Click to view the whole image.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-1"></div>
                         <div class="col-md-12 col-lg-6">
                             <h1 class="text-center">Hey there!</h1>
                             <p class="intex">My name is Yuvraj Sharma. I am a senior high school student from India, who is into web development, music, photography and literature. I have been developing websites since 2015 and playing music since 2012, it wasn't until 2016 when I started producing music as well.</p>
@@ -226,7 +181,7 @@
         <script src="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
         <script src="lib/gen_validatorv31.js"></script>
-        <script src="lib/index.js"></script>
+        <script src="test.js"></script>
         
     </body>
 </html>
