@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cool slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .serviceSlider {
+            width: 100%;
+            overflow: hidden;
+            position: relative
+        }
+
+        .sliderControls span:active,
+        .sliderControls span:focus {
+            opacity: 1
+        }
+
+        .sliderControls span {
+            z-index: 9999;
+            padding: 1rem 2rem;
+            background-color: rgba(0, 0, 0, 0.1);
+            opacity: .7;
+            cursor: pointer;
+        }
+
+        .hidden {
+            visibility: hidden
+        }
+
+        .services {
+            transition: .4s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+            width: 400%
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="serviceSlider">
+        <h3 class="text-center p-5">Our Services</h3>
+        <div class="d-flex justify-content-center flex-wrap px-5 pb-5 services">
+            <div class="card m-5">
+                <h4 class="card-header">Free consultation with lawyers</h4>
+                <div class="card-body">
+                    <p class="card-text">We will provide free legal consultation on calls from verified and experienced lawyers.</p>
+                    <div class="d-flex justify-content-center"><a class="btn btn-outline-warning btn-lg" href="consult.php">Let's go</a></div>
+                </div>
+            </div>
+            <div class="card m-5">
+                <h4 class="card-header">Connect with a lawyer</h4>
+                <div class="card-body">
+                    <p class="card-text">For all your business needs and requirements, we can provide experienced and trusted lawyers from various expertise to solve all your legal problems throughout the country.</p>
+                    <div class="d-flex justify-content-center"><a href="findlawyer.php" class="btn btn-outline-warning btn-lg">Let's go!</a></div>
+                </div>
+            </div>
+            <div class="card m-5">
+                <h4 class="card-header">MASKO Library</h4>
+                <div class="card-body">
+                    <p class="card-text">We have taken the initiative to put together a library of legal research papers, courses, legal updates &amp; other materials for lawyers by the lawyers. Be a part of this initiative.</p>
+                    <div class="d-flex justify-content-center"><a href="signup.html" class="btn btn-outline-warning btn-lg">Let's go!</a></div>
+                </div>
+            </div>
+            <div class="card m-5">
+                <h4 class="card-header">Free legal advice</h4>
+                <div class="card-body">
+                    <p class="card-text">Post your legal query and get your answer from professional and experienced lawyers in 48 hours. Post a query now!</p>
+                    <div class="d-flex justify-content-center"><a href="advice.php" class="btn btn-outline-warning btn-lg">Let's go!</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center text-center sliderControls">
+            <span class="mr-3 leftCon hidden" style="font-size: 2rem"><i class="fa fa-angle-left" aria-hidden="false"></i></span>
+            <span class="rightCon" style="font-size: 2rem"><i class="fa fa-angle-right" aria-hidden="false"></i></span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var i = 0;
+        $('.sliderControls span').click(function() {
+            if (i == 50) {
+                $('.rightCon').toggleClass('hidden');
+            } else if (i == 25) {
+                $('.leftCon').toggleClass('hidden');
+            }
+        });
+        $('.rightCon').on('click', function() {
+            i += 25;
+            $('.services').css({
+                "transform": 'translate(-' + i + '%)'
+            });
+            if (i >= 0) {
+                $('.leftCon').removeClass('hidden')
+            }
+        });
+        $('.leftCon').on('click', function() {
+            i -= 25;
+            $('.services').css({
+                "transform": "translate(-" + i + "%)"
+            });
+            if (i < 75) {
+                $('.rightCon').removeClass('hidden')
+            } else if (i == 25) {
+                $('.leftCon').addClass('hidden')
+            }
+        });
+    </script>
+</body>
+
+</html>

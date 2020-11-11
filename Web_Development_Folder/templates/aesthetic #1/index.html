@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forbidden Verses</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="application-name" content="Website">
+        <meta name="author" content="Forbidden Verses">
+        <meta name="description" content="Website for Forbidden Verses">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.css">
+        <link rel="stylesheet" href="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/animate.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="lib/favicon.png">
+    </head>
+    <body data-spy="scroll" data-target="#navp">
+        <div class="loader full" id="ldiv">
+            <div class="lds-css">
+                <div style="width:100%;height:100%" class="lds-ellipsis">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlayer"></div>
+        </div>
+        <div class="allmodals">
+            <div class="modal fade" id="audi" tabindex="-1" role="dialog" aria-labelledby="Audience" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white">
+                            <h3 class="modal-title ml-auto mr-auto" id="Audience">Audience</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="container">
+                                <div class="form-group">
+                                    <label for="name1">Your name</label>
+                                    <input type="text" class="form-control" id="name1" placeholder="Name" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email1">Your email address</label>
+                                    <input type="email" class="form-control" id="email1" aria-describedby="info1" placeholder="Email" value="" required>
+                                    <small id="info1" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="numb1">Your phone number</label>
+                                    <input type="tel" class="form-control" id="numb1" aria-describedby="info2" placeholder="Phone number" value="" required>
+                                    <small id="info2" class="form-text text-muted">Don't worry, we have a strict no-spam policy</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="occu1">Your school/college</label>
+                                    <input type="text" class="form-control" id="occu1" aria-describedby="info3" placeholder="Occupation" value="" required>
+                                    <small id="info3" class="form-text text-muted">Or if you are working, please mention that.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="au">Tell us about yourself!</label>
+                                    <input type="text" class="form-control" id="au" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="how1">How did you hear about us?</label>
+                                    <input type="text" class="form-control" id="how1" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="link1">Link to your Facebook/Instagram</label>
+                                    <input type="url" class="form-control" id="link1" aria-describedby="info4" value="" required>
+                                    <small id="info4" class="form-text text-muted">Preferably Instagram.</small>
+                                </div>
+                                <button type="submit" class="ml-auto btn btn-outline-primary btn-lg">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="parti" tabindex="-1" role="dialog" aria-labelledby="Participant" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white">
+                            <h3 class="modal-title ml-auto mr-auto" id="Participant">Participant</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="container">
+                                <div class="form-group">
+                                    <label for="name11">Your name</label>
+                                    <input type="text" class="form-control" id="name11" placeholder="Name" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email11">Your email address</label>
+                                    <input type="email" class="form-control" id="email11" aria-describedby="info11" placeholder="Email" value="" required>
+                                    <small id="info11" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="numb11">Your phone number</label>
+                                    <input type="tel" class="form-control" id="numb11" aria-describedby="info21" placeholder="Phone number" value="" required>
+                                    <small id="info21" class="form-text text-muted">Don't worry, we have a strict no-spam policy</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="occu11">Your school/college</label>
+                                    <input type="text" class="form-control" id="occu11" aria-describedby="info31" placeholder="Occupation" value="" required>
+                                    <small id="info31" class="form-text text-muted">Or if you are working, please mention that.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="au1">Tell us about yourself!</label>
+                                    <input type="text" class="form-control" id="au1" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="how11">How did you hear about us?</label>
+                                    <input type="text" class="form-control" id="how11" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="link11">Link to your Facebook/Instagram</label>
+                                    <input type="url" class="form-control" id="link11" aria-describedby="info41" value="" required>
+                                    <small id="info41" class="form-text text-muted">Preferably Instagram.</small>
+                                </div>
+                                <button type="submit" class="ml-auto btn btn-outline-primary btn-lg">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hide mainbod">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <a class="navbar-brand inta"><img src="lib/logo_nobg.png" class="img-fluid"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navp" aria-controls="navp" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navp">
+                    <div class="nav navbar-nav ml-auto">
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="homa" href="#mainentry" role="tab" data-toggle="pill" aria-controls="mainentry" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="evea" href="#events" aria-controls="events" aria-selected="false">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="joura" href="#jour" aria-controls="jour" aria-selected="false">Journal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="suba" href="#sub" aria-controls="sub" aria-selected="false">Submissions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="aboa" href="#about" aria-controls="about" aria-selected="false">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="cona" href="#con" aria-controls="con" aria-selected="false">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="mainentry" role="tabpanel" aria-labelledby="homa">
+                    <div class="container-fluid text-center text-white full" data-anchor="intro" id="intro">
+                        <div class="introheading">
+                            <h1>Forbidden Verses</h1>
+                            <span class="navbtn"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="container-fluid full" id="home">
+                        <div class="banner"></div>
+                        <div class="media">
+                            <img src="lib/logo_nobg.png" class="align-self-center mr-3" style="width: 20%" alt="Forbidden Verses">
+                            <div class="media-body text">
+                                <p>Forbidden Verses is our little part to bring art to everyone else. This community started in October 2018 with a little open mic is ever growing. Through our events we aim to give a space to artists to truly express themselves without any conditions and try to make art more accessible for all. There are poems that can change the world, paintings that build new ones, photography that captures both the ugly and the beautiful and music which sets this change into motion, and our aim is to bring these glorious artforms under one roof.</p>
+                                <p class="mb-0">Our community is ever growing with new art forms being experimented each event and our audiences come not only to listen, but to become parts of little stories themselves. We also believe current social situations can never be divorced from the art we create, hence, we provide a safe space for these difficult dialogues to actually be facilitated. We are open to collaborations with any organisation that aims at making the skyline of Delhi and beyond, happier with art, expression and any civic engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid full tab-pane fade bg-dark" id="events" role="tabpanel" aria-labelledby="evea">
+                    <div class="banner"></div>
+                    <div class="container">
+                        <h1 class="text-center text-white">Upcoming events</h1>
+                        <br>
+                        <div class="banner"></div>
+                        <div class="container-fluid text-white text-center" id="timer"></div>
+                        <div class="banner"></div>
+                        <div class="d-flex justify-content-around">
+                            <img class="img-fluid justify-content-center" src="lib/poster1.jpeg" style="width: 30%" alt="New Event">
+                        </div>
+                        <div class="text-center text-white container date" onclick="">30<sup>th</sup> June<br>5 PM</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-white">
+                            <h3 class="text-center">Some general guidelines</h3>
+                            <ul class="container">
+                                <li>Each performer will be given maximum <b>5 minutes</b></li>
+                                <li>You're allowed to read works by different writers and share your stories but due credit should be given to the original artist. </li>
+                                <li>There are no boundaries to literature and hence we don't want to keep any too.</li>
+                                <li>We have <b>1 mic</b> (with stand) and <b>2 amplifiers</b>. If you require anything else please inform us.</li>
+                                <li>The event will only be a success with your co-operation. Please feel free to connect with us for any query that you have. </li>
+                                <li>An Entry fee of <i class="fas fa-rupee-sign" style="font-size: 1.2rem"></i> <b>50</b> has to be paid at the venue on the day of the event. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-around">
+                                <button class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#audi">Audience</button>
+                                <button class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#parti">Participant</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid full tab-pane fade" id="jour" role="tabpanel" aria-labelledby="joura">
+                    <div class="banner"></div>
+                    <h1 class="text-center text-white">Our Journal</h1>
+
+                </div>
+                <div class="container-fluid full tab-pane fade" id="sub" role="tabpanel" aria-labelledby="suba">
+                    <div class="banner"></div>
+                    <h1 class="text-center text-white">Submit us your work!</h1>
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <form action="submission.php" method="post" class="text-white">
+                                <fieldset>
+                                    <legend class="text-center">Submissions</legend>
+                                    <div class="form-group">
+                                        <label for="">Random input</label>
+                                        <input type="" class="form-control" id="" aria-describedby="" placeholder="Value..." value="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Random input</label>
+                                        <input type="" class="form-control" id="" aria-describedby="" placeholder="Value..." value="" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="">Choose something</label>
+                                        <select id="" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option value="art">Art</option>
+                                            <option value="poetry">Poetry</option>
+                                            <option value="etc">etc</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="ml-auto btn btn-outline-secondary btn-lg">Submit</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid full tab-pane fade" id="about" role="tabpanel" aria-labelledby="aboa">
+                    <div class="banner"></div>
+                    <div class="team text-white">
+                        <h1 class="ml-auto mr-auto">Our Team</h1>
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-4 col-md-6 text-center">
+                                <div class="imgcontainer">
+                                    <img class="img-fluid rounded-circle img-thumbnail" src="lib/krishn.jpeg">
+                                </div>
+                                <h1>Krishn Sharan</h1>
+                                <h2>Co - Founder</h2>
+                                <p class="text-left text-white-50">Hi! I am Krishn Sharan, the co-founder of Forbidden Verses. If we ever share a conversation, you'll either laugh or economics will take over you forever. Music gigs outside my future maggie stall cant be missed. The cost of knowing me is just one pepsi. I am omnipresent, however you can find me here <a href="https://www.instagram.com/hmm_acha_theek_hai/" class="text-white-50" target="_blank">@hmm_acha_theek_hai</a></p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 text-center">
+                                <div class="imgcontainer">
+                                    <img class="img-fluid rounded-circle img-thumbnail" src="lib/varun.jpeg">
+                                </div>
+                                <h1>Varun Ahuja</h1>
+                                <h2>Co - Founder</h2>
+                                <p class="text-left text-white-50">Hi! My name is Varun Ahuja and I am the co-founder of Forbidden Verses. I have been performing and organising spoken-word events for a while now and feel anything can be solved one poem at a time. Follow me on <a href="https://www.instagram.com/alittlesomethingelse_/" target="_blank" class="text-white-50">@alittlesomethingelse_</a> to chit chat about anything and everything.</p>
+                            </div>
+                        </div>
+                        <div class="banner"></div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 text-center">
+                                <div class="imgcontainer">
+                                    <img class="img-fluid rounded-circle img-thumbnail" src="lib/chetna.jpeg">
+                                </div>
+                                <h1>Chetna Chauhan</h1>
+                                <h2></h2>
+                                <p class="text-left text-white-50">Hey, I'm Chetna, an artist (maybe). Stories are what inspires me to create something and I believe everything and everyone has a story of their own. Follow me <a href="https://www.instagram.com/cheyyayyayyay/" target="_blank" class="text-white-50">@cheyyayyayyay</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center">
+                                <div class="imgcontainer">
+                                    <img class="img-fluid rounded-circle img-thumbnail" src="lib/anoushka.jpeg">
+                                </div>
+                                <h1>Anoushka Radhakrishnan</h1>
+                                <h2></h2>
+                                <p class="text-left text-white-50">My name is Anoushka Radhakrishnan and I am a member of the ForVerses. I have been writing poetry ever since I can remember, (from the generic "my dream" in fifth grade to mental health and more now). I work to help create a space where people can be unrestrictive about their art and feel free to express themselves. Follow me <a href="https://www.instagram.com/nachonucchu/" target="_blank" class="text-white-50">@nachonucchu</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center">
+                                <div class="imgcontainer">
+                                    <img class="img-fluid rounded-circle img-thumbnail" src="lib/vaibhav.jpeg">
+                                </div>
+                                <h1>Vaibhav Sabharwal</h1>
+                                <h2></h2>
+                                <p class="text-left text-white-50">Hi, I’m Vaibhav Sabharwal. I handle finance and logistics at ForVerses. I’m a B.Com Hons. student and feel that poetry and music really complete me. Follow me on Insta (<a href="https://www.instagram.com/vaibhav_sabharwal27/" target="_blank" class="text-white-50">@vaibhav_sabharwal27</a>) to see random write ups based on my life.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center">
+                                <div class="imgcontainer">
+                                    <img class="img-fluid rounded-circle img-thumbnail" src="lib/anureet.jpeg">
+                                </div>
+                                <h1>Anureet Watta</h1>
+                                <h2></h2>
+                                <p class="text-left text-white-50">Hey, I'm Anureet. I handle marketing and curation at Forbidden Verses. I believe 'Silence is an act of violence too'. Therefore I write, sometimes very personal, sometimes very political, in my head they aren't that different. Follow my Instagram (<a href="https://www.instagram.com/wattaaaaaaa/" target="_blank" class="text-white-50">@wattaaaaaaa</a>) for poetry and memes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner"></div>
+                </div>
+                <div class="container-fluid full tab-pane fade" id="con" role="tabpanel" aria-labelledby="cona">
+                    <div class="banner"></div>
+                    <h1 class="text-center text-white">Get in touch with us</h1>
+                    <form class="container text-white">
+                        <div class="form-group">
+                            <label for="conname">Your name</label>
+                            <input type="text" class="form-control" id="conname" placeholder="Name" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="conmail">Your email address</label>
+                            <input type="email" class="form-control" id="conmail" placeholder="Email" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your message</label>
+                            <input type="text" class="form-control" id="message" placeholder="Anything you want to say..." value="" required>
+                        </div>
+                        <button type="submit" class="ml-auto btn btn-outline-light btn-lg">Submit</button>
+                    </form>
+                    <div class="banner"></div>
+                    <hr>
+                    <div class="banner"></div>
+                    <div class="d-flex container justify-content-around" style="background-color: rgba(255,255,255,.7)">
+                        <a class="text-black-50" href="https://www.facebook.com/forverses/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a class="text-black-50" href="https://www.instagram.com/forverses/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="text-black-50" href="mailto: forbiddenverses@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+                    </div>
+                    <div class="banner"></div>
+                </div>
+            </div>
+            <footer class="text-center">
+                Seems like you have reached the end! Don't worry, we will ferry ya to the top.<br><br>
+                <span class="ferrybtn"><i class="fas fa-chevron-up"></i></span><br><br>
+                &copy; Forbidden Verses <br><br>
+                Website developed by <a target="_blank" href="https://yuvrajsharma07.github.io">@yuvrajsharma</a>
+            </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
