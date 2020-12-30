@@ -1,13 +1,39 @@
+html {
+    overflow-x: hidden
+}
 div, p, span {
-    color: #fff;
     font-family: 'Montserrat'
 }
 h1, h2, h3 {
     font-family: 'Comfortaa'
 }
-.mainbod {
-    opacity: 0;
+.cs {
+    font-family: 'Cutive Mono'
+}
+.btn, input, label {
+    font-family: 'Quicksand'
+}
+textarea {
+    resize: none
+}
+label {
+    font-size: 1.1rem;
+    padding: 1rem
+}
+.mainbod, .full {
     transition: .4s ease-out
+}
+#intro {
+    background-color: #1D1F1D
+}
+#about {
+    background-color: #101A26
+}
+#work {
+    background-color: #18272B
+}
+#con {
+    background-color: #222
 }
 .intex {
     padding: 2rem;
@@ -20,15 +46,9 @@ h1, h2, h3 {
 #navb ul {
     margin: 0
 }
-.row .row ul {
-    font-family: 'Cutive Mono'
-}
-.btn {
-    font-family: 'Quicksand'
-}
 .intropic {
     border-radius: 100%;
-    border: 6px solid #fff;
+    border: 6px solid #c6ffc6;
     cursor: pointer;
     transition: .4s ease-out
 }
@@ -62,7 +82,6 @@ h1, h2, h3 {
 }
 .text {
     white-space: nowrap; 
-    color: #fff;
     font-size: 16px;
     position: absolute;
     overflow: hidden;
@@ -115,7 +134,7 @@ h1, h2, h3 {
 }
 #navb a {
     padding: 1rem;
-    color: #fff;
+    
     transition: .4s ease-out;
     display: block;
     text-decoration: none;
@@ -125,9 +144,6 @@ h1, h2, h3 {
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-}
-#navb a:hover {
-    color: #000
 }
 #navb a:before {
     content: "";
@@ -150,8 +166,6 @@ h1, h2, h3 {
     border-radius: 1px
 }
 .loader {
-    width: 100%;
-    height: 100vh;
     padding-top: 22%;
     transition: .4s ease-out;
     position: relative
@@ -221,7 +235,88 @@ h1, h2, h3 {
 .card {
     background-color: rgba(0,0,0,0.4);
 }
+.progress {
+    height: 5px !important;
+    border-radius: 0 !important;
+    background-color: rgba(0,0,0,0)
+}
+.progress-bar {
+    background-color: #ca5762
+}
+.cs li {
+    padding: 1rem;
+    border-right: 2px solid rgba(255,255,255,0.5);
+    transition: .4s ease-out
+}
+.cs li:hover {
+    cursor: pointer;
+    border-right-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.5)
+}
+#thanks h4 {
+    font-size: 3rem
+}
+form button[type=submit] {
+    border-color: #00c6d2 !important;
+    color: #00c6d2;
+}
+form button[type=submit]:hover {
+    background-color: #00c6d2;
+}
+form button[type=submit]:active {
+    background-color: #00c6d2 !important;
+    border-color: #00c6d2 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 198, 210, 0.5) !important;
+}
+form button[type=submit]:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 198, 210, 0.5);
+}
+.quo {
+    border-color: rgb(185, 43, 39) !important;
+    color: rgb(185, 43, 39);
+}
+.quo:hover {
+    border-color: rgb(185, 43, 39) !important;
+    background-color: rgb(185, 43, 39);
+}
+.quo:active {
+    border-color: rgb(185, 43, 39) !important;
+    background-color: rgb(185, 43, 39) !important;
+    box-shadow: 0 0 0 0.2rem rgba(185, 43, 39,0.5) !important;
+}
+.quo:focus {
+    box-shadow: 0 0 0 0.2rem rgba(185, 43, 39,0.5);
+}
+.linkedin {
+    border-color: rgb(10, 102, 194) !important;
+    color: rgb(10, 102, 194);
+}
+.linkedin:hover {
+    border-color: rgb(10, 102, 194) !important;
+    background-color: rgb(10, 102, 194);
+}
+.linkedin:active {
+    border-color: rgb(10, 102, 194) !important;
+    background-color: rgb(10, 102, 194) !important;
+    box-shadow: 0 0 0 0.2rem rgba(10, 102, 194,0.5) !important;
+}
+.linkedin:focus {
+    box-shadow: 0 0 0 0.2rem rgba(10, 102, 194,0.5);
+}
+.form-control {
+    padding: .5rem .9rem
+}
+textarea.form-control {
+    height: 10rem
+}
+.conlist {
+    padding: 0;
+}
+.conlist li {
+    margin-bottom: 1rem
+}
 
+/* Media Queries */
 @media screen and (max-width: 1000px) {
     .conlist li {
         padding: 1rem

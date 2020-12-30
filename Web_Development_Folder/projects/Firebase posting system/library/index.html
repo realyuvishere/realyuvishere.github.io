@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MASKO | Library</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="MASKO">
+        <meta name="keywords" content="Legal news, law courses, law events, research paper, legal blog, legal notice, legal journal, law, IPR">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/animate.css">
+        <link rel="stylesheet" href="lib/index.css">
+    </head>
+    <body>
+        <div class="mainbod">
+            <div class="allmodals">
+                <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <div class="progress m-3">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="spinner-border text-info fade show" role="status">
+                                    <span class="sr-only">Uploading</span>
+                                </div>
+                                <div id="uploadAlert" class="alert fade" role="alert"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="documentModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header p-5">
+                                <h1 class="modal-title" id="documentTitle"></h1>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <div id="documentRender">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="deleteAccountModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <div class="alert alert-danger" role="alert">
+                                    You are about to delete your account! Your data will be lost and you will no longer be able to access any of the perks of the library thereof. Are you sure you want to continue?
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="confirmDelete">
+                                        <label class="form-check-label" for="confirmDelete">Yes, I am sure.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-primary btn-lg" data-dismiss="modal">I rather won't</button>
+                                <button type="button" class="btn btn-outline-danger btn-lg" disabled>Bye!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="register_modal_title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="warning" class="alert alert-danger fade" role="alert"></div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="login_tab" role="tabpanel">
+                                        <fieldset>
+                                            <legend class="p-3">Log in</legend>
+                                            <div class="form-group">
+                                                <label class="p-1" for="login_email">Email</label>
+                                                <input class="form-control border-0 bg-light" type="email" id="login_email" name="login_email" value="" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="p-1" for="login_password">Password</label>
+                                                <input class="form-control border-0 bg-light" type="password" id="login_password" name="login_password" value="" placeholder="Password">
+                                            </div>
+                                            <button class="btn btn-lg btn-block btn-outline-dark my-5" id="login_submit" type="submit" value="submit">Go</button>
+                                            <hr>
+                                            <h4 class="text-center my-2">Continue using:</h4>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <button class="btn btn-lg btn-block btn-outline-primary my-3" id="googlesignup" type="submit" value="submit"><i class="fa fa-google" aria-hidden="true"></i> Google</button>
+                                                </div>
+                                            </div>
+                                            <div class="p-2 text-center text-muted nav">No account yet? <a class="btn btn-link text-dark" style="margin-top: -5px" data-toggle="tab" href="#register_tab" role="tab" aria-controls="register_tab" aria-selected="false">Sign up</a></div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="tab-pane fade" id="register_tab" role="tabpanel">
+                                        <fieldset>
+                                            <legend class="p-3">Sign up</legend>
+                                            <div class="form-group">
+                                                <label class="p-1" for="register_email">Email</label>
+                                                <input class="form-control border-0 bg-light" type="email" id="register_email" name="register_email" value="" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="p-1" for="register_password">Password</label>
+                                                <div class="d-flex">
+                                                    <input class="form-control border-0 bg-light togpass" type="password" id="register_password" name="register_password" value="" placeholder="Password">
+                                                    <span id="passtoggle" class="btn btn-link hide" style="cursor: pointer"><i class="fa fa-eye"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="p-1" for="register_password_confim">Confirm password</label>
+                                                <input class="form-control border-0 bg-light togpass" type="password" id="register_password_confim" name="register_password_confim" value="" placeholder="Confirm password">
+                                            </div>
+                                            <button class="btn btn-lg btn-block btn-outline-dark my-5" id="register_submit" type="submit" value="submit">Submit</button>
+                                            <hr>
+                                            <h4 class="text-center my-2">Continue using:</h4>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <button class="btn btn-lg btn-block btn-outline-primary my-3" id="googlesignup" type="submit" value="submit"><i class="fa fa-google" aria-hidden="true"></i> Google</button>
+                                                </div>
+                                            </div>
+                                            <div class="p-2 text-center text-muted nav">Already have an account? <a class="btn btn-link text-dark" style="margin-top: -5px" data-toggle="tab" href="#login_tab" role="tab" aria-controls="login_tab" aria-selected="false">Log in</a></div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="px-3 pt-3 fixed-top">
+                <div class="clearfix">
+                    <button class="btn btn-outline-secondary navbar-toggle" type="button"><i class="fa fa-navicon" aria-hidden="false"></i></button>
+                    <button class="btn btn-outline-dark float-right" id="themetoggle">Dark Mode</button>
+                </div>
+                <div class="d-flex justify-content-center align-items-center overflow-auto mt-2">
+<!--                    <a class="btn btn-link py-2 px-3 mx-1">Editorial</a>-->
+                    <a class="btn py-2 px-3 mx-1" id="active">Shorts</a>
+                    <a class="btn py-2 px-3 mx-1" href="../blogs/">Blog</a>
+                    <a class="btn py-2 px-3 mx-1 disabled" aria-disabled="true">Events (coming soon)</a>
+                </div>
+            </nav>
+            <div class="usernav p-0 full position-fixed" id="navp">
+                <div class="nav navbar-nav">
+                    <span class="closebtn px-4 pb-2 position-fixed">&times;</span>
+                    <ul class="justify-content-center p-5 full flex-column text-center nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="userpa" href="#userprofile" role="tab" data-toggle="pill" aria-controls="userprofile" aria-selected="false">Your profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="papera" href="#paper" role="tab" aria-controls="paper" aria-selected="false">Submit a paper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="feeda" href="#postFeed" role="tab" data-toggle="pill" aria-controls="postFeed" aria-selected="true">Your Feed</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-link text-muted" disabled>News (coming soon)</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="cona" href="#con" role="tab" aria-controls="con" aria-selected="false">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Go back to MASKO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="warning" class="alert alert-danger text-center fade" role="alert"></div>
+            <div class="tab-content position-relative">
+                
+                <div class="container-fluid full tab-pane fade" id="userprofile" role="tabpanel" aria-labelledby="userpa">
+                    <div class="banner"></div>
+                    <h1 class="text-center p-5">Your Profile</h1>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <div class="banner"></div>
+                                        <img class="card-img-top">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <input class="text-center card-title username" placeholder="What do we call you?" readonly><br>
+                                    <input class="text-center card-text text-muted useremail" readonly><br>
+                                    <div class="banner"></div>
+                                    <hr>
+                                    <div class="banner"></div>
+                                    <h1 class="text-center card-title">Your work</h1>
+                                    <div class="d-flex justify-content-around flex-wrap userWorkRow"></div>
+                                </div>
+                            </div>
+                            <div class="banner"></div>
+                            <div class="row pb-5">
+                                <div class="col">
+                                    <div class="row">
+                                        <button type="button" class="btn btn-outline-primary col" id="editChanges"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-outline-warning col" id="logOut"><i class="fa fa-power-off" aria-hidden="true"></i> Log out</button>
+<!--                                        <button type="button" class="btn btn-outline-danger col" id="deleteAccount"><i class="fa fa-trash" aria-hidden="true"></i> Delete Account</button>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-fluid full tab-pane fade" role="tabpanel" id="paper" aria-labelledby="papera">
+                    <div class="banner"></div>
+                    <h1 class="text-center p-5">Submit a research paper!</h1>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="p-4 form-group">
+                                        <label for="nameDisplay">Name</label>
+                                        <input type="text" class="form-control" id="nameDisplay" placeholder="Your name to be displayed" value="" readonly required>
+                                    </div>
+                                    <div class="p-4 form-group">
+                                        <label for="titleDisplay">Title</label>
+                                        <input type="text" class="form-control" id="titleDisplay" placeholder="Title to be displayed" value="" required>
+                                    </div>
+                                    <div class="p-4 form-group">
+                                        <label for="summaryDisplay">Short description/summary <span class="text-muted">(optional)</span></label>
+                                        <input type="text" class="form-control" id="summaryDisplay" placeholder="Summary to be displayed" value="">
+                                    </div>
+                                    <div class="p-4 form-group">
+                                        <label for="fileUpload">Your file</label>
+                                        <input type="file" class="bg-secondary text-white text-center p-3 form-control-file" id="fileUpload" value="" accept="application/pdf" required>
+                                    </div>
+                                    <button type="button" class="btn btn-lg btn-outline-info" id="publish"><i class="fa fa-pencil"></i> Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-fluid full tab-pane fade show active" role="tabpanel" id="postFeed" aria-labelledby="feeda">
+                    <div class="banner"></div>
+                    <h1 class="text-center p-5">Your feed</h1>
+                    <div class="banner"></div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6" id="mainFeed">
+                        </div>
+                        <div class="col-md-4">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-fluid full tab-pane fade" id="con" role="tabpanel" aria-labelledby="cona">
+                    <div class="banner"></div>
+                    <section class="contact-area" id="contact_area">
+                        <div class="row">
+                            <div class="col-md-12 col-md-offset-3 text-center">
+                                <div class="section-heading">
+                                    <h1 class="section-title p-5">Contact Us</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8 col-md-offset-2">
+                                <form method="post" action="../lib/contact.php" id="contactform" class="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6"><input id="name" type="text" class="form-control" name="name" placeholder="Name" required></div>
+                                        <div class="col-md-6"><input id="email" class="form-control" type="email" name="email" placeholder="Email" required></div>
+                                    </div>
+                                    <input type="text" id="subject" placeholder="Subject" class="form-control my-3" name="subject" required>
+                                    <textarea name="message" id="message" rows="5" class="form-control" placeholder="Message" required></textarea>
+                                    <div class="d-flex justify-content-center"><button class="btn btn-outline-dark btn-lg my-3" type="submit">Submit Message</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>    
+                </div>
+                
+            </div>
+            <div class="banner"></div>
+            <footer class="jumbotron m-0">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 class="text-center">Get in touch</h5>
+                        <ul>
+                            <li><a href="mailto: info@connectmasko.co" class="btn btn-link text-dark">Gmail</a></li>
+                            <li><a href="https://twitter.com/MASKO86832184" class="btn btn-link text-dark">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/MASKO-108746267453884/" class="btn btn-link text-dark">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/company/advmasko/" class="btn btn-link text-dark">LinkedIn</a></li>
+                            <li><a class="btn btn-link text-dark" href="https://instagram.com/connect_to_masko?igshid=1rioyvxwbksn4">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <h5 class="text-center">Subscribe</h5>
+                        <ul>
+                            <li><a class="btn btn-link text-dark" href="../diaries/">Blog</a></li>
+                            <li><a class="btn btn-link text-dark">Newsletter (coming soon)</a></li>
+                            <li><a class="btn btn-link text-dark">Legal Magazine (coming soon)</a></li>
+                            <li><a href="../library/index.html" class="btn btn-link text-dark">MASKO Library</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="text-center">Careers</h5>
+                        <ul>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="btn btn-link text-dark dropdown-toggle" role="button" id="for_students" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For Students</a>
+                                    <div class="dropdown-menu" aria-labelledby="for_students">
+                                        <a class="dropdown-item" href="../campus_manager/index.html">Campus Manager</a>
+                                        <a class="dropdown-item" href="../internship/internship.php">Internships</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--                        <li><a class="btn btn-link text-dark">For Business</a></li>-->
+                            <li><a class="btn btn-link text-dark" href="../lawyers.php">For Lawyers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li><a class="btn btn-link text-dark" href="../lib/Masko%20T&C.docx">T&amp;C</a></li>
+                            <li><a class="btn btn-link text-dark">Support</a></li>
+                            <li><a class="btn btn-link text-dark" href="../lib/MASKO%20Privacy%20Policy.docx">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center pt-5"></div>
+            </footer>
+        </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+        <script src="lib/init.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="lib/index.js"></script>
+        <script src="lib/auth.js"></script>
+        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <script src="lib/cores/update.js"></script>
+        <script src="lib/cores/user.js"></script>
+    </body>
+</html>
